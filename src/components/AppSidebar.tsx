@@ -112,6 +112,18 @@ export function AppSidebar() {
       <SidebarFooter className="border-t border-zinc-900 p-2">
         <SidebarMenu>
           <SidebarMenuItem>
+            <SidebarMenuButton
+              onClick={() => toggleSidebar()}
+              tooltip="Toggle Sidebar"
+              className="hover:bg-emerald-500/10 hover:text-emerald-500 transition-colors group-data-[collapsible=icon]:justify-center"
+            >
+              <PanelLeft className="w-4 h-4" />
+              <span className="font-mono text-[10px] uppercase tracking-wider group-data-[collapsible=icon]:hidden">
+                Minimize Interface
+              </span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton
@@ -148,20 +160,6 @@ export function AppSidebar() {
                 </div>
               </DropdownMenuContent>
             </DropdownMenu>
-          </SidebarMenuItem>
-        </SidebarMenu>
-        <SidebarMenu className="mt-2">
-          <SidebarMenuItem>
-            <SidebarMenuButton
-              onClick={() => toggleSidebar()}
-              tooltip="Toggle Sidebar"
-              className="text-zinc-600 hover:text-emerald-500 hover:bg-emerald-500/10 transition-colors group-data-[collapsible=icon]:justify-center"
-            >
-              <PanelLeft className="w-4 h-4" />
-              <span className="font-mono text-[10px] uppercase tracking-wider group-data-[collapsible=icon]:hidden">
-                Minimize Interface
-              </span>
-            </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarFooter>
