@@ -8,7 +8,7 @@
 
 ## Phase 2: Project Initialization & Core Components
 - [x] Task: Initialize the React/Vite project structure using Bun. (608db01)
-- [ ] Task: Configure Tailwind CSS v4 and shadcn/ui.
+- [x] Task: Configure Tailwind CSS v4 and shadcn/ui. (bcfcc70)
 - [ ] Task: Create reusable UI components for Unit Cards and Selection Lists.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Project Initialization & Core Components' (Protocol in workflow.md)
 
