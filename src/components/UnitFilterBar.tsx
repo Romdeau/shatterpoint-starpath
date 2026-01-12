@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
 import type { UnitFilters } from "@/lib/filters";
 import type { UnitType } from "@/types/unit";
@@ -149,30 +151,92 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
         </div>
       </div>
 
-      {/* Keywords Quick Filter */}
-      <div className="flex flex-wrap gap-2 pt-2 border-t border-zinc-900/50">
-        <div className="flex items-center gap-2 mr-2">
-          <Zap className="w-3 h-3 text-emerald-500" />
-          <span className="text-[9px] font-mono text-zinc-500 uppercase tracking-widest">Quick Filters:</span>
-        </div>
-        {displayKeywords.map((kw) => {
-          const isActive = filters.keywords?.includes(kw);
-          return (
-            <Badge
-              key={kw}
-              variant={isActive ? "default" : "outline"}
-              onClick={() => toggleKeyword(kw)}
-              className={cn(
-                "cursor-pointer text-[8px] font-mono uppercase tracking-tighter rounded-none transition-all",
-                isActive
-                  ? "bg-emerald-600 text-zinc-950 hover:bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.3)]"
-                  : "bg-transparent border-zinc-800 text-zinc-500 hover:border-zinc-600 hover:text-zinc-300"
-              )}
+      {/* Keywords Tag Filter */}
+      <div className="flex flex-col gap-3 pt-3 border-t border-zinc-900/50">
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="flex items-center gap-2 mr-2">
+            <Zap className="w-3 h-3 text-emerald-500" />
+            <span className="text-[9px] font-mono text-zinc-500 uppercase tracking-widest">Tactical Tags:</span>
+          </div>
+
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-7 px-3 bg-zinc-900/30 border-zinc-800 text-[8px] font-mono text-zinc-400 hover:text-emerald-500 hover:border-emerald-500/30 transition-all gap-2"
+              >
+                <span>+ ADD FILTERS</span>
+                {filters.keywords && filters.keywords.length > 0 && (
+                  <Badge variant="secondary" className="h-4 px-1 rounded-none bg-emerald-500/20 text-emerald-500 border-none text-[7px]">
+                    {filters.keywords.length}
+                  </Badge>
+                )}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="w-[200px] p-0 bg-zinc-950 border-zinc-800" align="start">
+              <Command className="bg-transparent">
+                <CommandInput
+                  placeholder="SEARCH TAGS..."
+                  className="h-8 text-[9px] font-mono uppercase border-none focus:ring-0 bg-zinc-900/50"
+                />
+                <CommandList className="max-h-[240px]">
+                  <CommandEmpty className="py-2 text-[8px] font-mono text-zinc-600 uppercase">No Tags Found</CommandEmpty>
+                  <CommandGroup heading={<span className="text-[7px] font-aurebesh text-zinc-700">sectors_available</span>}>
+                    {availableKeywords.map((kw) => {
+                      const isActive = filters.keywords?.includes(kw);
+                      return (
+                        <CommandItem
+                          key={kw}
+                          onSelect={() => toggleKeyword(kw)}
+                          className="text-[9px] font-mono uppercase py-1.5 focus:bg-emerald-500/10 focus:text-emerald-500 data-[selected=true]:bg-emerald-500/10 data-[selected=true]:text-emerald-500 cursor-pointer flex justify-between items-center group/item"
+                        >
+                          <span>{kw}</span>
+                          {isActive && <div className="w-1 h-1 bg-emerald-500 shadow-[0_0_5px_#10b981]" />}
+                        </CommandItem>
+                      );
+                    })}
+                  </CommandGroup>
+                </CommandList>
+              </Command>
+            </PopoverContent>
+          </Popover>
+
+          {filters.keywords && filters.keywords.length > 0 && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => onFilterChange({ ...filters, keywords: [] })}
+              className="h-7 px-2 text-[7px] font-mono text-zinc-600 hover:text-red-500 transition-colors uppercase tracking-tighter"
             >
-              {kw}
-            </Badge>
-          );
-        })}
+              [ PURGE ALL ]
+            </Button>
+          )}
+
+          <div className="ml-auto">
+            <span className="text-[7px] font-aurebesh text-zinc-800">tag_registry_access</span>
+          </div>
+        </div>
+
+        {/* Active Tag Pills */}
+        {filters.keywords && filters.keywords.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 animate-in fade-in slide-in-from-top-1 duration-300">
+            {filters.keywords.map((kw) => (
+              <Badge
+                key={kw}
+                className="bg-emerald-500/10 text-emerald-500 border-emerald-500/20 text-[8px] font-mono uppercase px-2 py-0.5 rounded-none flex items-center gap-1.5 group/tag hover:border-emerald-500/40 transition-all"
+              >
+                {kw}
+                <button
+                  onClick={() => toggleKeyword(kw)}
+                  className="text-emerald-500/40 hover:text-emerald-500 transition-colors"
+                >
+                  <X className="w-2.5 h-2.5" />
+                </button>
+              </Badge>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
