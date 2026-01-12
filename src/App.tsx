@@ -50,7 +50,7 @@ function App() {
 
         <SidebarInset className="flex flex-col bg-transparent">
           {/* Header / Top Bar */}
-          <header className="flex h-16 shrink-0 items-center justify-between gap-2 border-b border-zinc-900 px-6 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 bg-black/50 backdrop-blur-md sticky top-0 z-20">
+          <header className="flex h-16 shrink-0 items-center justify-between gap-2 border-b border-zinc-900 px-6 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 bg-black">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-4 border-r border-zinc-900 pr-6 h-8">
                 <span className="text-[10px] text-emerald-500 uppercase font-bold tracking-widest animate-pulse flex items-center gap-2">

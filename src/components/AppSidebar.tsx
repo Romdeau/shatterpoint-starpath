@@ -65,8 +65,8 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon" className="border-r border-zinc-900 bg-black">
-      <SidebarHeader className="border-b border-zinc-900 p-2 group-data-[collapsible=expanded]:p-4 transition-all">
-        <div className="flex items-center gap-3 group-data-[collapsible=icon]:justify-center">
+      <SidebarHeader className="border-b border-zinc-900 p-2 group-data-[collapsible=expanded]:p-4 transition-all relative overflow-hidden group/header">
+        <div className="flex items-center gap-3 group-data-[collapsible=icon]:justify-center relative z-10">
           <img
             src={`${import.meta.env.BASE_URL}starpath.svg`}
             alt="Starpath Logo"
@@ -82,12 +82,20 @@ export function AppSidebar() {
             </span>
           </div>
         </div>
+        {/* Technical Decorator Line */}
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
+        <div className="absolute top-1 right-2 group-data-[collapsible=icon]:hidden">
+          <span className="text-[6px] font-aurebesh text-zinc-800 uppercase tracking-tighter">imperial_property</span>
+        </div>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="text-[10px] font-mono text-zinc-600 uppercase group-data-[collapsible=icon]:hidden">
-            Main Interface
-          </SidebarGroupLabel>
+          <div className="px-2 py-1 group-data-[collapsible=icon]:hidden flex justify-between items-center">
+            <SidebarGroupLabel className="text-[10px] font-mono text-zinc-600 uppercase">
+              Main Interface
+            </SidebarGroupLabel>
+            <span className="text-[7px] font-aurebesh text-zinc-800 uppercase">sector_01</span>
+          </div>
           <SidebarGroupContent>
             <SidebarMenu>
               {navItems.map((item) => (
@@ -109,13 +117,18 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter className="border-t border-zinc-900 p-2">
+      <SidebarFooter className="border-t border-zinc-900 p-2 relative">
+        <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/10 to-transparent" />
         <SidebarMenu>
           <SidebarMenuItem>
+            <div className="px-2 py-1 group-data-[collapsible=icon]:hidden flex justify-between items-center">
+              <span className="text-[8px] font-mono text-zinc-700 uppercase">System Parameters</span>
+              <span className="text-[7px] font-aurebesh text-zinc-800 uppercase">ctrl_log</span>
+            </div>
             <SidebarMenuButton
               onClick={() => toggleSidebar()}
               tooltip="Toggle Sidebar"
-              className="hover:bg-emerald-500/10 hover:text-emerald-500 transition-colors group-data-[collapsible=icon]:justify-center"
+              className="hover:bg-emerald-500/10 hover:text-emerald-500 transition-colors group-data-[collapsible=icon]:justify-center mt-1"
             >
               <PanelLeft className="w-4 h-4" />
               <span className="font-mono text-[10px] uppercase tracking-wider group-data-[collapsible=icon]:hidden">
@@ -128,12 +141,15 @@ export function AppSidebar() {
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton
                   size="lg"
-                  className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground group-data-[collapsible=icon]:justify-center"
+                  className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground group-data-[collapsible=icon]:justify-center border border-transparent hover:border-emerald-500/20 transition-all"
                 >
                   <User2 className="w-4 h-4" />
                   <div className="flex flex-col items-start text-left group-data-[collapsible=icon]:hidden">
                     <span className="text-[10px] font-bold uppercase text-zinc-300">Imperial Operator</span>
-                    <span className="text-[8px] font-mono text-zinc-500 uppercase tracking-tighter">Rank: Delta-9</span>
+                    <span className="text-[8px] font-mono text-zinc-500 uppercase tracking-tighter flex items-center gap-2">
+                      Rank: Delta-9
+                      <span className="text-[6px] font-aurebesh opacity-50">rank_id</span>
+                    </span>
                   </div>
                   <ChevronUp className="ml-auto w-4 h-4 group-data-[collapsible=icon]:hidden text-zinc-600" />
                 </SidebarMenuButton>

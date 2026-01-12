@@ -71,7 +71,7 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
   ).slice(0, 15);
 
   return (
-    <div className="flex flex-col gap-4 p-4 border border-zinc-800 bg-zinc-950/80 backdrop-blur-md sticky top-16 group-has-[[data-collapsible=icon]]/sidebar-wrapper:top-12 z-10 relative overflow-hidden group">
+    <div className="flex flex-col gap-4 p-4 border border-zinc-800 bg-zinc-950/90 backdrop-blur-md sticky top-0 z-10 relative overflow-hidden group">
       {/* Tactical Decorator */}
       <div className="absolute top-0 left-0 w-1 h-full bg-emerald-600/50" />
       <div className="absolute top-0 right-0 p-1">
