@@ -62,7 +62,7 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
     "Separatist Alliance",
     "Sith",
     "Shadow Collective",
-    "Inquisitorious",
+    "Inquisitorius",
   ];
 
   // Combine primary factions with available keywords, ensuring no duplicates and limited count
@@ -145,8 +145,8 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
               onClick={() => toggleKeyword(kw)}
               className={cn(
                 "cursor-pointer text-[8px] font-mono uppercase tracking-tighter rounded-none transition-all",
-                isActive 
-                  ? "bg-emerald-600 text-zinc-950 hover:bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.3)]" 
+                isActive
+                  ? "bg-emerald-600 text-zinc-950 hover:bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.3)]"
                   : "bg-transparent border-zinc-800 text-zinc-500 hover:border-zinc-600 hover:text-zinc-300"
               )}
             >

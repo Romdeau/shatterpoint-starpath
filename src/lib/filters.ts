@@ -13,10 +13,13 @@ export interface UnitFilters {
  */
 export function filterUnits(units: Unit[], filters: UnitFilters): Unit[] {
   return units.filter((unit) => {
-    // Search filter (name)
+    // Search filter (name or keywords)
     if (filters.search) {
       const searchLower = filters.search.toLowerCase();
-      if (!unit.name.toLowerCase().includes(searchLower)) {
+      const matchesName = unit.name.toLowerCase().includes(searchLower);
+      const matchesKeywords = unit.keywords.some(kw => kw.toLowerCase().includes(searchLower));
+
+      if (!matchesName && !matchesKeywords) {
         return false;
       }
     }

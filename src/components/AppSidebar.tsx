@@ -62,8 +62,8 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon" className="border-r border-zinc-900 bg-black">
-      <SidebarHeader className="border-b border-zinc-900 p-4">
-        <div className="flex items-center gap-3">
+      <SidebarHeader className="border-b border-zinc-900 p-2 group-data-[collapsible=expanded]:p-4 transition-all">
+        <div className="flex items-center gap-3 group-data-[collapsible=icon]:justify-center">
           <img
             src={`${import.meta.env.BASE_URL}starpath.svg`}
             alt="Starpath Logo"
@@ -113,7 +113,7 @@ export function AppSidebar() {
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton
                   size="lg"
-                  className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+                  className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground group-data-[collapsible=icon]:justify-center"
                 >
                   <User2 className="w-4 h-4" />
                   <div className="flex flex-col items-start text-left group-data-[collapsible=icon]:hidden">
