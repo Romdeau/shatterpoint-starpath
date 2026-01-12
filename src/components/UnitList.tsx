@@ -9,7 +9,8 @@ interface UnitListProps {
   onUnitClick?: (unit: Unit) => void;
 }
 
-const MemoizedUnitCard = memo(UnitCard);
+// Memoization removed to ensure stable event propagation during interaction debugging
+// const MemoizedUnitCard = memo(UnitCard);
 
 export const UnitList: React.FC<UnitListProps> = ({ units, className, onUnitClick }) => {
   if (units.length === 0) {
@@ -53,9 +54,12 @@ export const UnitList: React.FC<UnitListProps> = ({ units, className, onUnitClic
             <span>Ref_{idx.toString().padStart(3, '0')}</span>
             <span className="font-aurebesh opacity-30">item</span>
           </div>
-          <MemoizedUnitCard
+          <UnitCard
             unit={unit}
-            onNameClick={() => onUnitClick?.(unit)}
+            onNameClick={() => {
+              console.log(`Unit selected: ${unit.name}`);
+              onUnitClick?.(unit);
+            }}
           />
         </div>
       ))}
