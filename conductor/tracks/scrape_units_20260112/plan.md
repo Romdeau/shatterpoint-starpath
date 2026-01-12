@@ -7,7 +7,7 @@
 - [x] Task: Remove temporary scrape script and clean up `package.json`.
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Data Ingestion Pipeline' (Protocol in workflow.md) (c32c4c9)
 
-## Phase 2: Search & Filter Logic
+## Phase 2: Search & Filter Logic [checkpoint: 5b0eeef]
 - [x] Task: Update the application to load data from `src/data/units.json` and `src/data/abilities.json` instead of sample data. (0cf6322)
 - [x] Task: Create a filtering utility in `src/lib/filters.ts` and write tests for various filter combinations.
 - [x] Task: Implement the filtering logic (Type, Keyword, Era, Points) to process the full unit list. (3351fd6)
