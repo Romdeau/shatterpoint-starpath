@@ -20,15 +20,30 @@ function App() {
           <SidebarInset className="flex flex-col bg-transparent">
             {/* Header / Top Bar */}
             <header className="flex h-16 shrink-0 items-center justify-between gap-2 border-b border-zinc-900 px-6 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
-              <div className="flex items-center gap-4">
-                <span className="text-[10px] text-emerald-500 uppercase font-bold tracking-widest animate-pulse flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
-                  Imperial Link: Connected
-                </span>
+              <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4 border-r border-zinc-900 pr-6 h-8">
+                  <span className="text-[10px] text-emerald-500 uppercase font-bold tracking-widest animate-pulse flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
+                    Imperial Link: Connected
+                  </span>
+                </div>
+                <div className="flex flex-col">
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 leading-tight">
+                    Authorized Personnel Only
+                  </h2>
+                  <span className="text-[8px] font-aurebesh text-emerald-500/30 uppercase leading-tight">active-manifest</span>
+                </div>
               </div>
-              <div className="flex items-center gap-4 font-mono text-[9px] text-zinc-600 uppercase">
-                <span className="flex gap-1"><span className="font-aurebesh opacity-50">LAT</span> 53.3498° N</span>
-                <span className="flex gap-1"><span className="font-aurebesh opacity-50">LNG</span> 6.2603° W</span>
+
+              <div className="flex items-center gap-8 font-mono text-[9px] text-zinc-600 uppercase">
+                <div className="flex flex-col items-end border-r border-zinc-900 pr-8 h-8 justify-center hidden md:flex">
+                  <span className="text-zinc-500 leading-tight">ORD_03.manifest</span>
+                  <span className="text-[7px] text-zinc-800 tracking-tighter leading-tight">Clearance: Delta-9</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="flex gap-1"><span className="font-aurebesh opacity-50">LAT</span> 53.3498° N</span>
+                  <span className="flex gap-1"><span className="font-aurebesh opacity-50">LNG</span> 6.2603° W</span>
+                </div>
               </div>
             </header>
 

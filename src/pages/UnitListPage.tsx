@@ -23,30 +23,12 @@ export const UnitListPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-8 animate-in fade-in duration-500">
-      <div className="flex flex-col md:flex-row md:items-center gap-4">
-        <div className="flex flex-col">
-          <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-zinc-400">
-            Authorized Personnel Only
-          </h2>
-          <span className="text-[9px] font-aurebesh text-emerald-500/40 uppercase">active manifest</span>
-        </div>
-
-        <div className="flex-1 ml-0 md:ml-8">
-          <UnitFilterBar
-            filters={filters}
-            onFilterChange={setFilters}
-            availableKeywords={allKeywords}
-          />
-        </div>
-
-        <div className="h-px flex-1 bg-zinc-900/50 hidden md:block" />
-        <div className="flex flex-col items-end">
-          <span className="text-[10px] font-mono text-zinc-700">ORD_03.manifest</span>
-          <span className="text-[8px] font-mono text-zinc-800 uppercase tracking-tighter">Clearance Level: Delta-9</span>
-        </div>
-      </div>
-
+    <div className="flex flex-col gap-6 animate-in fade-in duration-500">
+      <UnitFilterBar
+        filters={filters}
+        onFilterChange={setFilters}
+        availableKeywords={allKeywords}
+      />
       <UnitList units={filteredUnits} />
     </div>
   );
