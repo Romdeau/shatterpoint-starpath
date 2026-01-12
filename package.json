@@ -7,8 +7,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "bun test",
-    "scrape": "bun scripts/scrape.ts"
+    "test": "bun test"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
