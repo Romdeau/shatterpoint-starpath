@@ -1,5 +1,5 @@
 import React from "react";
-import { Unit } from "../types/unit";
+import type { Unit } from "../types/unit";
 import { UnitCard } from "./UnitCard";
 import { cn } from "../lib/utils";
 
