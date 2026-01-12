@@ -13,7 +13,7 @@ import { UnitFilterBar } from "./UnitFilterBar";
 describe("UnitFilterBar", () => {
   const mockFilters = {};
   const mockOnFilterChange = () => {};
-  const mockKeywords = ["Jedi", "501st"];
+  const mockKeywords = ["Bounty Hunter", "Scoundrel"];
 
   test("renders search input", () => {
     render(
@@ -35,7 +35,7 @@ describe("UnitFilterBar", () => {
         availableKeywords={mockKeywords} 
       />
     );
-    const jediBadge = within(document.body).queryByText(/Jedi/i);
-    expect(jediBadge).not.toBeNull();
+    const badge = within(document.body).queryByText(/Bounty Hunter/i);
+    expect(badge).not.toBeNull();
   });
 });

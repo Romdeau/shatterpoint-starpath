@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, Filter, X, Zap } from "lucide-react";
+import { Search, X, Zap } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -54,6 +54,21 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
   const clearFilters = () => {
     onFilterChange({});
   };
+
+  const primaryFactions = [
+    "501st",
+    "Jedi",
+    "Galactic Republic",
+    "Separatist Alliance",
+    "Sith",
+    "Shadow Collective",
+    "Inquisitorious",
+  ];
+
+  // Combine primary factions with available keywords, ensuring no duplicates and limited count
+  const displayKeywords = Array.from(
+    new Set([...primaryFactions, ...availableKeywords])
+  ).slice(0, 15);
 
   return (
     <div className="flex flex-col gap-4 p-4 border border-zinc-800 bg-zinc-950/50 backdrop-blur-sm relative overflow-hidden group">
@@ -119,9 +134,9 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
       <div className="flex flex-wrap gap-2 pt-2 border-t border-zinc-900/50">
         <div className="flex items-center gap-2 mr-2">
           <Zap className="w-3 h-3 text-emerald-500" />
-          <span className="text-[9px] font-mono text-zinc-500 uppercase tracking-widest">Key Factions:</span>
+          <span className="text-[9px] font-mono text-zinc-500 uppercase tracking-widest">Quick Filters:</span>
         </div>
-        {["501st", "Jedi", "Galactic Republic", "Separatist Alliance", "Sith", "Shadow Collective", "Inquisitorious"].map((kw) => {
+        {displayKeywords.map((kw) => {
           const isActive = filters.keywords?.includes(kw);
           return (
             <Badge
