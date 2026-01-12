@@ -1,4 +1,4 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect, beforeEach } from "bun:test";
 import { JSDOM } from "jsdom";
 import { renderHook, act } from "@testing-library/react";
 import { SquadProvider, useSquad } from "./SquadContext";
@@ -8,6 +8,17 @@ const dom = new JSDOM("<!doctype html><html><body></body></html>");
 global.document = dom.window.document;
 global.window = dom.window as any;
 global.navigator = dom.window.navigator;
+
+// Mock localStorage
+const storage: Record<string, string> = {};
+global.localStorage = {
+    getItem: (key: string) => storage[key] || null,
+    setItem: (key: string, value: string) => { storage[key] = value },
+    clear: () => { Object.keys(storage).forEach(k => delete storage[k]) },
+    removeItem: (key: string) => { delete storage[key] },
+    length: 0,
+    key: () => null
+} as any;
 
 // Mock Unit
 const mockPrimary: Unit = {
@@ -29,6 +40,10 @@ const mockPrimary: Unit = {
 // For now, let's try standard library usage.
 
 describe("SquadContext", () => {
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
   it("provides initial empty state", () => {
     // We need a DOM for renderHook
     const { result } = renderHook(() => useSquad(), {
@@ -82,5 +97,29 @@ describe("SquadContext", () => {
     });
 
     expect(result.current.squads.length).toBe(0);
+  });
+
+  it("persists squads to localStorage", () => {
+    const { result, unmount } = renderHook(() => useSquad(), {
+        wrapper: SquadProvider
+    });
+
+    act(() => {
+        result.current.addSquad();
+    });
+
+    expect(result.current.squads.length).toBe(1);
+    
+    // Check if it's in storage
+    expect(localStorage.getItem('starpath_squads')).toBeDefined();
+    
+    // Unmount and remount (mocking reload)
+    unmount();
+    
+    const { result: result2 } = renderHook(() => useSquad(), {
+        wrapper: SquadProvider
+    });
+
+    expect(result2.current.squads.length).toBe(1);
   });
 });
