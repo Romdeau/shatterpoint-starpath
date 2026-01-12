@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shatterpoint Unit",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "enum": ["Primary", "Secondary", "Support"]
+    },
+    "points": {
+      "type": "integer"
+    },
+    "force": {
+      "type": "integer"
+    },
+    "health": {
+      "type": "integer"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "enum": ["Active", "Reactive", "Innate", "Identity"] },
+          "cost": { "type": "integer" },
+          "description": { "type": "string" }
+        },
+        "required": ["name", "type", "description"]
+      }
+    }
+  },
+  "required": ["name", "type", "points", "health", "keywords", "abilities"]
+}
