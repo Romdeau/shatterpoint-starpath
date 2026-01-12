@@ -7,7 +7,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Data Architecture' (Protocol in workflow.md) (f2014c4)
 
 ## Phase 2: Project Initialization & Core Components
-- [ ] Task: Initialize the React/Vite project structure using Bun.
+- [x] Task: Initialize the React/Vite project structure using Bun. (608db01)
 - [ ] Task: Configure Tailwind CSS v4 and shadcn/ui.
 - [ ] Task: Create reusable UI components for Unit Cards and Selection Lists.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Project Initialization & Core Components' (Protocol in workflow.md)
