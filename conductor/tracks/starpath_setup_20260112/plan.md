@@ -1,10 +1,10 @@
 # Implementation Plan: Define Data Structure & Prototype List Builder
 
-## Phase 1: Data Architecture
+## Phase 1: Data Architecture [checkpoint: f2014c4]
 - [x] Task: Define the core JSON schema for Shatterpoint units in `src/data/schema.json`. (44b4ffd)
 - [x] Task: Create a sample unit file `src/data/sample_unit.json` to validate the schema. (a76e93c)
 - [x] Task: Develop a data mapping strategy from external sources to our internal schema. (8693f02)
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Data Architecture' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Data Architecture' (Protocol in workflow.md) (f2014c4)
 
 ## Phase 2: Project Initialization & Core Components
 - [ ] Task: Initialize the React/Vite project structure using Bun.
