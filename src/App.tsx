@@ -37,7 +37,7 @@ function App() {
       <header className="relative mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-3">
-             <div className="w-8 h-8 bg-orange-600 flex items-center justify-center font-black text-black">S</div>
+             <img src="/starpath.svg" alt="Starpath Logo" className="w-10 h-10" />
              <h1 className="text-4xl font-black uppercase tracking-[0.2em] text-zinc-100">
                 STAR<span className="text-orange-600">PATH</span>
              </h1>
