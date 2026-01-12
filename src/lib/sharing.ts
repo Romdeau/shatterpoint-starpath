@@ -1,4 +1,4 @@
-import { Squad } from "../context/SquadContext";
+import type { Squad } from "../context/SquadContext";
 import type { Unit } from "../types/unit";
 
 interface SerializedSquad {
@@ -26,14 +26,14 @@ export const importSquadFromBase64 = (data: string, findUnit: (name: string) => 
     try {
         const json = atob(data);
         const parsed = JSON.parse(json) as SerializedSquad;
-        
+
         const squad: Squad = {
             id: crypto.randomUUID(),
             primary: parsed.p ? findUnit(parsed.p) || null : null,
             secondary: parsed.s ? findUnit(parsed.s) || null : null,
             support: parsed.u ? findUnit(parsed.u) || null : null,
         };
-        
+
         return squad;
     } catch (e) {
         console.error("Import failed", e);
