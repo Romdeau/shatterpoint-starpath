@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { UnitList } from "../components/UnitList";
 import { UnitFilterBar } from "../components/UnitFilterBar";
+import { UnitDetailDialog } from "../components/UnitDetailDialog";
 import unitData from "../data/units.json";
 import type { Unit } from "../types/unit";
 import { filterUnits, type UnitFilters } from "../lib/filters";
@@ -11,6 +12,7 @@ const units = unitData as unknown as Unit[];
 export const UnitListPage = () => {
   const { accent } = useTheme();
   const [filters, setFilters] = useState<UnitFilters>({});
+  const [selectedUnit, setSelectedUnit] = useState<Unit | null>(null);
 
   const filteredUnits = useMemo(() => {
     return filterUnits(units, filters);
@@ -29,7 +31,13 @@ export const UnitListPage = () => {
         onFilterChange={setFilters}
         availableKeywords={allKeywords}
       />
-      <UnitList units={filteredUnits} />
+      <UnitList units={filteredUnits} onUnitClick={setSelectedUnit} />
+
+      <UnitDetailDialog
+        unit={selectedUnit}
+        isOpen={!!selectedUnit}
+        onOpenChange={(open) => !open && setSelectedUnit(null)}
+      />
     </div>
   );
 };

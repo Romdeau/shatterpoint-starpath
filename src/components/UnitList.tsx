@@ -45,7 +45,6 @@ export const UnitList: React.FC<UnitListProps> = ({ units, className, onUnitClic
       {units.map((unit, idx) => (
         <div
           key={`${unit.name}-${idx}`}
-          onClick={() => onUnitClick?.(unit)}
           className="group/item relative"
           style={{ contentVisibility: 'auto', containIntrinsicSize: '0 400px' }}
         >
@@ -54,7 +53,10 @@ export const UnitList: React.FC<UnitListProps> = ({ units, className, onUnitClic
             <span>Ref_{idx.toString().padStart(3, '0')}</span>
             <span className="font-aurebesh opacity-30">item</span>
           </div>
-          <MemoizedUnitCard unit={unit} />
+          <MemoizedUnitCard
+            unit={unit}
+            onNameClick={() => onUnitClick?.(unit)}
+          />
         </div>
       ))}
     </div>
