@@ -43,11 +43,14 @@ export const ThemeSwitcher: React.FC = () => {
                 onClick={() => setAccent(a)}
                 className={clsx(
                   "w-3 h-3 rounded-full border border-zinc-900/50 transition-all",
-                  a === 'emerald' && "bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.3)]",
-                  a === 'amber' && "bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.3)]",
-                  a === 'red' && "bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.3)]",
                   accent === a ? "scale-125 border-zinc-400" : "scale-100 opacity-40 hover:opacity-100"
                 )}
+                style={{
+                  backgroundColor: a === 'emerald' ? '#10b981' : a === 'amber' ? '#f59e0b' : '#ef4444',
+                  boxShadow: accent === a
+                    ? `0 0 8px ${a === 'emerald' ? 'rgba(16,185,129,0.3)' : a === 'amber' ? 'rgba(245,158,11,0.3)' : 'rgba(239,68,68,0.3)'}`
+                    : 'none'
+                }}
               />
             ))}
           </div>
