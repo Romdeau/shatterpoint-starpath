@@ -2,21 +2,19 @@ import { expect, test } from "bun:test";
 import schema from "./schema.json";
 import { validate } from "jsonschema";
 
-// Mock transformation function based on the strategy
+// Updated Mock transformation function
 function transform(externalData: any) {
   return {
     name: externalData.name,
     type: externalData.type,
     points: externalData.points,
     force: externalData.force,
-    health: externalData.stamina, // Map stamina to health
+    stamina: externalData.stamina,
+    durability: externalData.durability || 1, // Default if missing
+    eras: externalData.eras || [],
     keywords: externalData.tags,
-    abilities: (externalData.abilities || []).map((a: any) => ({
-      name: a.name,
-      type: a.type,
-      cost: a.cost || 0,
-      description: a.text
-    }))
+    abilityIds: (externalData.abilities || []).map((a: any) => a.id || a.name.toLowerCase().replace(/ /g, "-")),
+    stanceIds: [] // Placeholder
   };
 }
 
@@ -25,13 +23,15 @@ const mockExternalUnit = {
   type: "Secondary",
   points: 4,
   stamina: 9,
+  durability: 2,
+  eras: ["Clone Wars"],
   tags: ["501st", "Clone Trooper", "Galactic Republic"],
   abilities: [
     {
       name: "Get Down!",
       type: "Reactive",
       cost: 1,
-      text: "When a character in this unit or a nearby Allied unit is targeted..."
+      text: "When a character in this unit..."
     }
   ]
 };
@@ -39,5 +39,6 @@ const mockExternalUnit = {
 test("transformation produces valid unit", () => {
   const transformed = transform(mockExternalUnit);
   const result = validate(transformed, schema);
+  if (!result.valid) console.error(result.errors);
   expect(result.valid).toBe(true);
 });

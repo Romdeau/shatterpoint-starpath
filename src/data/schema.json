@@ -15,8 +15,17 @@
     "force": {
       "type": "integer"
     },
-    "health": {
+    "stamina": {
       "type": "integer"
+    },
+    "durability": {
+      "type": "integer"
+    },
+    "eras": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "keywords": {
       "type": "array",
@@ -24,19 +33,18 @@
         "type": "string"
       }
     },
-    "abilities": {
+    "abilityIds": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "name": { "type": "string" },
-          "type": { "enum": ["Active", "Reactive", "Innate", "Identity"] },
-          "cost": { "type": "integer" },
-          "description": { "type": "string" }
-        },
-        "required": ["name", "type", "description"]
+        "type": "string"
+      }
+    },
+    "stanceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     }
   },
-  "required": ["name", "type", "points", "health", "keywords", "abilities"]
+  "required": ["name", "type", "points", "stamina", "durability", "eras", "keywords", "abilityIds"]
 }

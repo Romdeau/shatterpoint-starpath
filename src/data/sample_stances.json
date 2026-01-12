@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dark-rage",
+    "name": "Dark Rage",
+    "attack_stats": { "melee": 5, "ranged": 0 },
+    "defense_stats": { "melee": 5, "ranged": 5 }
+  },
+  {
+    "id": "sinister-scion",
+    "name": "Sinister Scion",
+    "attack_stats": { "melee": 7, "ranged": 0 },
+    "defense_stats": { "melee": 4, "ranged": 4 }
+  }
+]
