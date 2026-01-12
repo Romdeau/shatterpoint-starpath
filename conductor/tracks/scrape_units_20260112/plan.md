@@ -11,7 +11,7 @@
 - [x] Task: Update the application to load data from `src/data/units.json` and `src/data/abilities.json` instead of sample data.
 - [x] Task: Create a filtering utility in `src/lib/filters.ts` and write tests for various filter combinations.
 - [x] Task: Implement the filtering logic (Type, Keyword, Era, Points) to process the full unit list. (3351fd6)
-- [ ] Task: Update the `UnitList` component to handle empty states and large datasets efficiently.
+- [x] Task: Update the `UnitList` component to handle empty states and large datasets efficiently. (bddb8d5)
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Search & Filter Logic' (Protocol in workflow.md)
 
 ## Phase 3: UI Integration & Polishing
