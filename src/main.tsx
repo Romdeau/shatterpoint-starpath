@@ -1,13 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { SquadProvider } from './context/SquadContext'
+import { ThemeProvider } from './context/ThemeContext'
 import './index.css'
 import App from './App.tsx'
-import { SquadProvider } from './context/SquadContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <SquadProvider>
-      <App />
-    </SquadProvider>
+    <ThemeProvider>
+      <SquadProvider>
+        <App />
+      </SquadProvider>
+    </ThemeProvider>
   </StrictMode>,
 )

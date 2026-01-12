@@ -1,22 +1,163 @@
+@import url('https://fonts.cdnfonts.com/css/aurebesh');
 @import "tailwindcss";
 
+:root {
+  /* Default: Dark + Emerald */
+  --color-bg: #09090b;
+  --color-text: #f4f4f5;
+  --color-accent: #10b981;
+  --color-accent-secondary: #059669;
+  --color-accent-muted: rgba(16, 185, 129, 0.1);
+  --color-accent-glow: rgba(16, 185, 129, 0.2);
+  --color-accent-shadow: rgba(16, 185, 129, 0.1);
+  --color-border: #18181b;
+  --color-border-accent: #064e3b;
+  --crt-opacity: 0.03;
+}
+
+.theme-light {
+  --color-bg: #e2e2e7;
+  --color-text: #18181b;
+  --color-border: #cacace;
+  --color-border-accent: #a1a1aa;
+  --color-accent-shadow: rgba(0, 0, 0, 0.05);
+  --crt-opacity: 0.05;
+}
+
+.accent-amber {
+  --color-accent: #f59e0b;
+  --color-accent-secondary: #d97706;
+  --color-accent-muted: rgba(245, 158, 11, 0.1);
+  --color-accent-glow: rgba(245, 158, 11, 0.2);
+  --color-accent-shadow: rgba(245, 158, 11, 0.1);
+  --color-border-accent: #78350f;
+}
+
+.accent-red {
+  --color-accent: #ef4444;
+  --color-accent-secondary: #dc2626;
+  --color-accent-muted: rgba(239, 68, 68, 0.1);
+  --color-accent-glow: rgba(239, 68, 68, 0.2);
+  --color-accent-shadow: rgba(239, 68, 68, 0.1);
+  --color-border-accent: #7f1d1d;
+}
+
 @theme {
-  --color-zinc-950: #09090b;
+  --color-zinc-950: var(--color-bg);
+  --color-zinc-100: var(--color-text);
+  --color-emerald-400: var(--color-accent);
+  --color-emerald-500: var(--color-accent);
+  --color-emerald-600: var(--color-accent-secondary);
+  --color-emerald-900: var(--color-border-accent);
+  --color-emerald-950: var(--color-accent-muted);
   --font-mono: "JetBrains Mono", "Space Mono", monospace;
+  --font-aurebesh: "Aurebesh", sans-serif;
 }
 
 :root {
-  background-color: #09090b;
-  color: #f4f4f5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
-  background-image: 
-    linear-gradient(rgba(20, 20, 20, 0.8) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 20, 20, 0.8) 1px, transparent 1px);
+  background-image:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
   background-size: 40px 40px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* CRT Effects */
+.crt-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+  opacity: 1;
+}
+
+/* Scanlines */
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+  background-size: 100% 3px, 3px 100%;
+  z-index: 10001;
+  opacity: var(--crt-opacity);
+}
+
+/* Global Flicker */
+.crt-screen::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.03);
+  opacity: 0;
+  z-index: 10002;
+  animation: crt-flicker 0.1s infinite;
+}
+
+@keyframes crt-flicker {
+  0% {
+    opacity: 0.012;
+  }
+
+  10% {
+    opacity: 0.018;
+  }
+
+  20% {
+    opacity: 0.011;
+  }
+
+  30% {
+    opacity: 0.025;
+  }
+
+  40% {
+    opacity: 0.013;
+  }
+
+  50% {
+    opacity: 0.019;
+  }
+
+  60% {
+    opacity: 0.025;
+  }
+
+  70% {
+    opacity: 0.017;
+  }
+
+  80% {
+    opacity: 0.011;
+  }
+
+  90% {
+    opacity: 0.022;
+  }
+
+  100% {
+    opacity: 0.014;
+  }
 }
 
 /* Custom Scrollbar for Industrial Look */
@@ -25,25 +166,42 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: var(--color-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3f3f46;
+  background: var(--color-border);
   border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ea580c;
+  background: var(--color-accent);
 }
 
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
 
 .animate-glitch-slow {

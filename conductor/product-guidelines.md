@@ -1,19 +1,33 @@
 # Product Guidelines - Shatterpoint Starpath
 
 ## Visual Aesthetic & Design Language
-### Galactic & Industrial ("The Andor Aesthetic")
-- **Core Theme:** Inspired by the N-S9 Starpath unit; clean, utilitarian, and industrial. 
-- **Palette:** High-contrast color schemes with a focus on data readability. Use dark backgrounds with sharp, accented foreground colors (e.g., terminal greens, command-center oranges, or imperial reds).
-- **Interface:** Utilitarian design with "industrial" edges. Avoid over-decorated elements; prioritize a "form follows function" approach that feels like a piece of Star Wars technology.
+### Galactic Imperial ("The Blind LTD / Andor Aesthetic")
+- **Core Theme:** Heavily inspired by the UI work of Blind LTD for *Andor*. The interface should feel like a piece of high-end Imperial technology—bureaucratic, utilitarian, and dangerously efficient.
+- **Palette:** 
+  - **Imperial Bureaucratic:** Deep emerald greens and tactical ambers on near-black backgrounds.
+  - **Tactical Alerts:** Sharp Imperial reds for warnings or critical state changes.
+  - **Industrial Grime:** Use subtle textures and scan-line overlays to simulate a physical CRT or datapad screen.
+- **Typography:**
+  - **Primary:** High-readability sans-serif (e.g., Inter, Roboto Mono) for functional data.
+  - **Atmospheric:** **Aurebesh** must be used for decorative labels, ID tags, and "fluff" descriptors to ground the app in the Star Wars universe.
+- **Interface:** High-density data layouts. Grid systems, technical measuring lines, and "read-out" animations that look like real-time data processing.
+
+## Narrative & Tone
+### Imperial Property
+- **Ownership:** All system text must reflect that this tool is official Imperial property. 
+- **Prose Style:** Cold, authoritative, and formal. Use terms like "Classified," "By Order of the Bureau of Standards," "Priority One Clearance," and "Authorized Imperial Personnel Only."
+- **Contradiction Check:** Avoid mixing Resistance and Imperial terminology. If the Empire designed the device, it uses Imperial standards.
 
 ## User Experience & Interface
 ### Tactical Hierarchy
-- **Primary Information:** Critical game stats (Health, Force, Struggle) must be immediately visible and color-coded for high-glanceability during a match.
-- **Navigation:** Use a layered or tabbed view. The main board state (Struggle Tracker, general Force pool) should remain easily accessible while allowing users to deep-dive into specific unit card details without losing context.
-- **Accessibility:** Large touch targets and high-readability fonts are mandatory for use in various lighting conditions at a gaming table.
+- **Primary Information:** Critical game stats (Health, Force, Struggle) must be immediately visible and color-coded for high-glanceability.
+- **Navigation:** Layered technical views. Transitions should feel like switching frequencies or loading new data sectors.
+- **Accessibility:** Ensure high contrast and large touch targets for tabletop utility.
 
-## Tone & Messaging
-### Prose Style
-- **Atmospheric Fluff:** Use "In-Universe Utility" prose for non-functional elements. Loading screens, empty states, and "about" sections should use terminology like "Syncing Starpath Unit," "Establishing Comms Link," or "Scanning Sector."
-- **Functional Interface:** All active gameplay elements, instructions, and settings must use functional and direct language. Clarity is paramount to prevent errors during complex game turns.
-- **Legal & Community:** Maintain a clear, friendly reminder of the tool's fan-made nature: "Community tool. Not affiliated with Atomic Mass Games."
+## Implementation Details
+### Aurebesh Integration
+- Use `@import url('https://fonts.cdnfonts.com/css/aurebesh');` for the Aurebesh font.
+- Apply `font-family: 'Aurebesh', sans-serif;` to decorative elements only, ensuring core data remains legible in basic Inter/Mono fonts.
+
+### Legal & Community
+- Maintain the disclaimer: "Starpath is a community tool. Not affiliated with Atomic Mass Games. Created for fan use only."

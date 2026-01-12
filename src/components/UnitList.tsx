@@ -16,14 +16,15 @@ export const UnitList: React.FC<UnitListProps> = ({ units, className, onUnitClic
       className
     )}>
       {units.map((unit, idx) => (
-        <div 
-          key={`${unit.name}-${idx}`} 
-          onClick={() => onUnitClick?.(unit)} 
+        <div
+          key={`${unit.name}-${idx}`}
+          onClick={() => onUnitClick?.(unit)}
           className="group/item relative"
         >
           {/* Tactical Indexing Decorator */}
-          <div className="absolute -top-3 -left-1 text-[8px] font-mono text-zinc-700 uppercase pointer-events-none group-hover/item:text-orange-900 transition-colors">
-            Ref_{idx.toString().padStart(3, '0')}
+          <div className="absolute -top-3 -left-1 text-[8px] font-mono text-zinc-700 uppercase pointer-events-none group-hover/item:text-emerald-900 transition-colors flex items-center gap-1">
+            <span>Ref_{idx.toString().padStart(3, '0')}</span>
+            <span className="font-aurebesh opacity-30">item</span>
           </div>
           <UnitCard unit={unit} />
         </div>
