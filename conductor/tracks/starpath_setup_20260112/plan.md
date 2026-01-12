@@ -6,11 +6,11 @@
 - [x] Task: Develop a data mapping strategy from external sources to our internal schema. (8693f02)
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Data Architecture' (Protocol in workflow.md) (f2014c4)
 
-## Phase 2: Project Initialization & Core Components
+## Phase 2: Project Initialization & Core Components [checkpoint: efb50f4]
 - [x] Task: Initialize the React/Vite project structure using Bun. (608db01)
 - [x] Task: Configure Tailwind CSS v4 and shadcn/ui. (bcfcc70)
 - [x] Task: Create reusable UI components for Unit Cards and Selection Lists. (f48ceda)
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Project Initialization & Core Components' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Project Initialization & Core Components' (Protocol in workflow.md) (efb50f4)
 
 ## Phase 3: List Builder Logic
 - [ ] Task: Implement the squad-building state management using React Context.
