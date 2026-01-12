@@ -37,7 +37,7 @@ export const UnitDetailDialog: React.FC<UnitDetailDialogProps> = ({
       <DialogContent
         showCloseButton={false}
         className={cn(
-          "max-w-4xl gap-0 border border-zinc-800 bg-zinc-950 p-0 shadow-2xl sm:rounded-none overflow-hidden"
+          "sm:max-w-4xl lg:max-w-5xl gap-0 border border-zinc-800 bg-zinc-950 p-0 shadow-2xl sm:rounded-none overflow-hidden"
         )}
       >
         {/* Tactical Header Overlay */}
@@ -89,7 +89,7 @@ export const UnitDetailDialog: React.FC<UnitDetailDialogProps> = ({
                 <span className="text-[7px] font-aurebesh text-zinc-700 uppercase tracking-widest">{pointsShort}</span>
               </div>
               <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.2em] mb-2">{pointsLabel}</span>
-              <span className="text-4xl font-black text-emerald-500">{unit.points}</span>
+              <span className="text-4xl font-black text-emerald-500">{Math.abs(unit.points)}</span>
               <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-emerald-500 group-hover:w-full transition-all duration-500" />
             </div>
 

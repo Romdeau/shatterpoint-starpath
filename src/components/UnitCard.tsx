@@ -68,7 +68,7 @@ export const UnitCard: React.FC<UnitCardProps> = ({ unit, className, onNameClick
               <span>{unit.type === "Primary" ? "SP" : "PC"}</span>
               <span className="font-aurebesh text-[6px] opacity-50">{unit.type === "Primary" ? "primary" : "support"}</span>
             </span>
-            <span className="text-xl font-black leading-none text-emerald-500">{unit.points}</span>
+            <span className="text-xl font-black leading-none text-emerald-500">{Math.abs(unit.points)}</span>
           </div>
         </div>
       </div>
