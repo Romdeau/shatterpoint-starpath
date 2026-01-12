@@ -78,72 +78,75 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
         <span className="text-[8px] font-aurebesh text-zinc-800 uppercase tracking-tighter">filter unit manifest</span>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-4">
+      <div className="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center">
         {/* Search Input */}
         <div className="relative flex-1 group">
           {!filters.search && (
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-emerald-500 transition-colors pointer-events-none" />
+            <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 group-focus-within:text-emerald-500 transition-colors pointer-events-none" />
           )}
           <Input
             placeholder="SEARCH UNIT REGISTRY..."
             value={filters.search || ""}
             onChange={handleSearchChange}
             className={cn(
-              "bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus-visible:ring-emerald-500/50 min-w-[200px] transition-all",
-              !filters.search ? "pl-10" : "pl-3 pr-10"
+              "h-8 bg-zinc-900/50 border-zinc-800 text-[9px] font-mono tracking-wider uppercase focus-visible:ring-emerald-500/50 min-w-[180px] transition-all",
+              !filters.search ? "pl-9" : "pl-3 pr-9"
             )}
           />
           {filters.search && (
             <button
               onClick={() => onFilterChange({ ...filters, search: undefined })}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-emerald-500 transition-colors"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-emerald-500 transition-colors"
             >
-              <X className="w-4 h-4" />
+              <X className="w-3.5 h-3.5" />
             </button>
           )}
         </div>
 
-        {/* Type Filter */}
-        <div className="w-full md:w-48">
-          <Select value={filters.type || "all"} onValueChange={handleTypeChange}>
-            <SelectTrigger className="bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus:ring-emerald-500/50">
-              <SelectValue placeholder="UNIT TYPE" />
-            </SelectTrigger>
-            <SelectContent className="bg-zinc-950 border-zinc-800 text-zinc-100 font-mono">
-              <SelectItem value="all" className="text-[10px] uppercase">All Types</SelectItem>
-              <SelectItem value="Primary" className="text-[10px] uppercase text-emerald-500 font-bold">Primary</SelectItem>
-              <SelectItem value="Secondary" className="text-[10px] uppercase text-emerald-500 font-bold">Secondary</SelectItem>
-              <SelectItem value="Support" className="text-[10px] uppercase text-emerald-500 font-bold">Support</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+        {/* Grouped Secondary Filters */}
+        <div className="flex flex-col md:flex-row gap-2 items-stretch md:items-center">
+          {/* Type Filter */}
+          <div className="w-full md:w-36">
+            <Select value={filters.type || "all"} onValueChange={handleTypeChange}>
+              <SelectTrigger className="h-8 bg-zinc-900/50 border-zinc-800 text-[9px] font-mono tracking-wider uppercase focus:ring-emerald-500/50">
+                <SelectValue placeholder="UNIT TYPE" />
+              </SelectTrigger>
+              <SelectContent className="bg-zinc-950 border-zinc-800 text-zinc-100 font-mono">
+                <SelectItem value="all" className="text-[9px] uppercase">All Types</SelectItem>
+                <SelectItem value="Primary" className="text-[9px] uppercase text-emerald-500 font-bold">Primary</SelectItem>
+                <SelectItem value="Secondary" className="text-[9px] uppercase text-emerald-500 font-bold">Secondary</SelectItem>
+                <SelectItem value="Support" className="text-[9px] uppercase text-emerald-500 font-bold">Support</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
 
-        {/* Era Filter */}
-        <div className="w-full md:w-48">
-          <Select value={filters.era || "all"} onValueChange={handleEraChange}>
-            <SelectTrigger className="bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus:ring-emerald-500/50">
-              <SelectValue placeholder="ERA" />
-            </SelectTrigger>
-            <SelectContent className="bg-zinc-950 border-zinc-800 text-zinc-100 font-mono">
-              <SelectItem value="all" className="text-[10px] uppercase">All Eras</SelectItem>
-              <SelectItem value="The High Republic" className="text-[10px] uppercase">The High Republic</SelectItem>
-              <SelectItem value="Clone Wars" className="text-[10px] uppercase">Clone Wars</SelectItem>
-              <SelectItem value="Reign of the Empire" className="text-[10px] uppercase">Reign of the Empire</SelectItem>
-              <SelectItem value="Galactic Civil War" className="text-[10px] uppercase">Galactic Civil War</SelectItem>
-              <SelectItem value="The New Republic" className="text-[10px] uppercase">The New Republic</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+          {/* Era Filter */}
+          <div className="w-full md:w-40">
+            <Select value={filters.era || "all"} onValueChange={handleEraChange}>
+              <SelectTrigger className="h-8 bg-zinc-900/50 border-zinc-800 text-[9px] font-mono tracking-wider uppercase focus:ring-emerald-500/50">
+                <SelectValue placeholder="ERA" />
+              </SelectTrigger>
+              <SelectContent className="bg-zinc-950 border-zinc-800 text-zinc-100 font-mono">
+                <SelectItem value="all" className="text-[9px] uppercase">All Eras</SelectItem>
+                <SelectItem value="The High Republic" className="text-[9px] uppercase">The High Republic</SelectItem>
+                <SelectItem value="Clone Wars" className="text-[9px] uppercase">Clone Wars</SelectItem>
+                <SelectItem value="Reign of the Empire" className="text-[9px] uppercase">Reign of the Empire</SelectItem>
+                <SelectItem value="Galactic Civil War" className="text-[9px] uppercase">Galactic Civil War</SelectItem>
+                <SelectItem value="The New Republic" className="text-[9px] uppercase">The New Republic</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
 
-        {/* Clear Button */}
-        <Button
-          variant="ghost"
-          onClick={clearFilters}
-          className="h-10 px-4 text-zinc-500 hover:text-emerald-500 hover:bg-emerald-500/10 border border-transparent hover:border-emerald-500/30 transition-all group"
-        >
-          <X className="w-4 h-4 mr-2 group-hover:rotate-90 transition-transform" />
-          <span className="text-[10px] font-mono tracking-widest uppercase">Clear</span>
-        </Button>
+          {/* Clear Button */}
+          <Button
+            variant="ghost"
+            onClick={clearFilters}
+            className="h-8 px-3 text-zinc-500 hover:text-emerald-500 hover:bg-emerald-500/10 border border-transparent hover:border-emerald-500/30 transition-all group shrink-0"
+          >
+            <X className="w-3.5 h-3.5 mr-1.5 group-hover:rotate-90 transition-transform" />
+            <span className="text-[9px] font-mono tracking-wider uppercase">Clear</span>
+          </Button>
+        </div>
       </div>
 
       {/* Keywords Quick Filter */}
