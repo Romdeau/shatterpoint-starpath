@@ -21,5 +21,5 @@
 ## Phase 4: Persistence & Polishing
 - [x] Task: Implement LocalStorage persistence for saved squads. (86f7f5b)
 - [x] Task: Apply the "Andor" aesthetic (Galactic & Industrial) to the UI. (1db28e0)
-- [~] Task: Ensure the "Community tool" disclaimer is present on all pages.
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: Persistence & Polishing' (Protocol in workflow.md)
+- [x] Task: Ensure the "Community tool" disclaimer is present on all pages. (0d0a8a8)
+- [~] Task: Conductor - User Manual Verification 'Phase 4: Persistence & Polishing' (Protocol in workflow.md)
