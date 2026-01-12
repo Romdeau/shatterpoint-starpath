@@ -1,4 +1,4 @@
-import { Unit, UnitType, Ability, AbilityType } from "../types/unit";
+import type { Unit, UnitType, Ability, AbilityType } from "../types/unit";
 
 export interface ExternalAbility {
   name: string;
