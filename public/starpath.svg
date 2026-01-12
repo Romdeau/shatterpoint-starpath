@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Body / Top Plate -->
+  <rect x="40" y="40" width="432" height="432" rx="24" fill="#121212"/>
+  <rect x="40" y="40" width="432" height="432" rx="24" stroke="#404040" stroke-width="8"/>
+  
+  <!-- Left Handle -->
+  <path d="M80 120V100C80 77.9086 97.9086 60 120 60C142.091 60 160 77.9086 160 100V120" stroke="#A0A0A0" stroke-width="24" stroke-linecap="round"/>
+  
+  <!-- Right Handle -->
+  <path d="M352 120V100C352 77.9086 370.091 60 392 60C413.909 60 432 77.9086 432 100V120" stroke="#A0A0A0" stroke-width="24" stroke-linecap="round"/>
+  
+  <!-- Main Red Button (Tactical Focus) -->
+  <circle cx="280" cy="130" r="45" fill="#D32F2F"/>
+  <circle cx="280" cy="130" r="45" stroke="#8B0000" stroke-width="4"/>
+  
+  <!-- Main Data Display (Red Bar) -->
+  <rect x="150" y="210" width="280" height="70" rx="4" fill="#4B0000"/>
+  <rect x="160" y="225" width="260" height="40" rx="2" fill="#B71C1C" fill-opacity="0.8"/>
+  
+  <!-- White Vents / Signal Bars -->
+  <g fill="#E0E0E0">
+    <rect x="85" y="320" width="20" height="80" rx="2"/>
+    <rect x="115" y="320" width="20" height="80" rx="2"/>
+    <rect x="145" y="320" width="20" height="80" rx="2"/>
+    <rect x="175" y="320" width="20" height="80" rx="2"/>
+    <rect x="205" y="320" width="20" height="80" rx="2"/>
+    <rect x="235" y="320" width="20" height="80" rx="2"/>
+  </g>
+  
+  <!-- Small Control Buttons -->
+  <rect x="85" y="210" width="40" height="40" rx="4" fill="#D32F2F"/> <!-- Red Square -->
+  <rect x="330" y="340" width="60" height="60" rx="4" fill="#D32F2F"/> <!-- Secondary Red -->
+  <rect x="85" y="260" width="20" height="15" rx="2" fill="#1976D2"/> <!-- Blue toggle -->
+  <rect x="110" y="260" width="20" height="15" rx="2" fill="#1976D2"/> <!-- Blue toggle -->
+</svg>

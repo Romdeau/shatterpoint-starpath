@@ -1,0 +1,8 @@
+{
+  "track_id": "scrape_units_20260112",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-01-12T15:00:00Z",
+  "updated_at": "2026-01-12T15:00:00Z",
+  "description": "Scrape unit data from external sources (Tabletop Admiral/ShatterpointDB) and integrate into the app."
+}

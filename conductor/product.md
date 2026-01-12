@@ -34,5 +34,5 @@ The primary focus is on casual players who need assistance with game state track
 - **Modern Responsive Web:** Optimized for both Desktop and Mobile devices to ensure usability at the gaming table.
 
 ## Content & Data
-- **Data Sourcing:** Unit data will be derived from existing community tools (Tabletop Admiral, ShatterpointDB) and structured into a common JSON format.
+- **Data Sourcing:** Unit data is structured in a custom JSON schema (see `src/data/schema.json`) compatible with existing community tools.
 - **Legal Disclaimer:** Every page must display: "Community tool. Not affiliated with Atomic Mass Games."
