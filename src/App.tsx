@@ -1,30 +1,10 @@
+import { useState, useMemo } from "react";
 import { UnitList } from "./components/UnitList";
-import sampleUnit from "./data/sample_unit.json";
+import unitData from "./data/units.json";
 import type { Unit } from "./types/unit";
+import { filterUnits } from "./lib/filters";
 
-// Prepare sample data for the display
-const units: Unit[] = [
-  sampleUnit as unknown as Unit,
-  {
-    ...sampleUnit,
-    name: "General Anakin Skywalker",
-    points: 7,
-    type: "Primary",
-    stamina: 10,
-    durability: 3,
-    force: 4,
-    keywords: ["Jedi", "501st", "Galactic Republic"]
-  } as unknown as Unit,
-  {
-    ...sampleUnit,
-    name: "Captain Rex",
-    points: 4,
-    type: "Secondary",
-    stamina: 9,
-    durability: 2,
-    keywords: ["501st", "Clone Trooper", "Galactic Republic"]
-  } as unknown as Unit
-];
+const units = unitData as unknown as Unit[];
 
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
@@ -32,6 +12,11 @@ import { useTheme } from "./context/ThemeContext";
 
 function App() {
   const { accent, isFlickerEnabled } = useTheme();
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredUnits = useMemo(() => {
+    return filterUnits(units, { search: searchTerm });
+  }, [searchTerm]);
 
   const logoFilter = {
     emerald: 'sepia(1) saturate(5) hue-rotate(90deg)',
@@ -84,21 +69,37 @@ function App() {
         <div className="absolute -left-6 top-0 bottom-0 w-px bg-zinc-800/50 hidden md:block" />
 
         <section className="mb-12">
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-8">
             <div className="flex flex-col">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-zinc-400">
                 Authorized Personnel Only
               </h2>
               <span className="text-[9px] font-aurebesh text-emerald-500/40 uppercase">active manifest</span>
             </div>
-            <div className="h-px flex-1 bg-zinc-900/50" />
+            
+            <div className="flex-1 max-w-md ml-0 md:ml-8">
+              <div className="relative group">
+                <input
+                  type="text"
+                  placeholder="SEARCH UNIT REGISTRY..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full bg-zinc-950 border border-zinc-800 p-2 pl-4 text-[10px] font-mono tracking-widest text-zinc-100 focus:outline-none focus:border-emerald-500/50 transition-colors placeholder:text-zinc-700"
+                />
+                <div className="absolute top-0 right-0 p-2 pointer-events-none">
+                  <span className="text-[8px] font-aurebesh text-zinc-800 group-hover:text-emerald-500/40 uppercase">search</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="h-px flex-1 bg-zinc-900/50 hidden md:block" />
             <div className="flex flex-col items-end">
               <span className="text-[10px] font-mono text-zinc-700">ORD_03.manifest</span>
               <span className="text-[8px] font-mono text-zinc-800 uppercase tracking-tighter">Clearance Level: Delta-9</span>
             </div>
           </div>
 
-          <UnitList units={units} />
+          <UnitList units={filteredUnits} />
         </section>
 
         {/* Tactical Info Panel */}
