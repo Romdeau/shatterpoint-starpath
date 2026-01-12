@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-## [ ] Track: Define Data Structure & Prototype List Builder
+## [~] Track: Define Data Structure & Prototype List Builder
 *Link: [./conductor/tracks/starpath_setup_20260112/](./conductor/tracks/starpath_setup_20260112/)*
