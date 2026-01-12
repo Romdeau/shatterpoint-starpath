@@ -19,7 +19,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 3: List Builder Logic' (Protocol in workflow.md) (5bb8aea)
 
 ## Phase 4: Persistence & Polishing
-- [ ] Task: Implement LocalStorage persistence for saved squads.
-- [ ] Task: Apply the "Andor" aesthetic (Galactic & Industrial) to the UI.
+- [x] Task: Implement LocalStorage persistence for saved squads. (86f7f5b)
+- [~] Task: Apply the "Andor" aesthetic (Galactic & Industrial) to the UI.
 - [ ] Task: Ensure the "Community tool" disclaimer is present on all pages.
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Persistence & Polishing' (Protocol in workflow.md)
