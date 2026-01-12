@@ -5,9 +5,10 @@ import { cn } from "../lib/utils";
 interface UnitCardProps {
   unit: Unit;
   className?: string;
+  onNameClick?: () => void;
 }
 
-export const UnitCard: React.FC<UnitCardProps> = ({ unit, className }) => {
+export const UnitCard: React.FC<UnitCardProps> = ({ unit, className, onNameClick }) => {
   // Deterministic REF ID based on unit name
   const getRefId = (name: string) => {
     let hash = 0;
@@ -36,7 +37,13 @@ export const UnitCard: React.FC<UnitCardProps> = ({ unit, className }) => {
 
       <div className="relative flex justify-between items-start border-b border-zinc-800 pb-3 mb-3">
         <div>
-          <h3 className="text-2xl font-black tracking-tighter uppercase leading-none group-hover:text-emerald-500 transition-colors">
+          <h3
+            onClick={(e) => {
+              e.stopPropagation();
+              onNameClick?.();
+            }}
+            className="text-2xl font-black tracking-tighter uppercase leading-none group-hover:text-emerald-500 transition-colors cursor-pointer hover:underline decoration-emerald-500/50 underline-offset-4"
+          >
             {unit.name}
           </h3>
           <div className="flex items-center gap-2 mt-1">
@@ -61,7 +68,7 @@ export const UnitCard: React.FC<UnitCardProps> = ({ unit, className }) => {
               <span>{unit.type === "Primary" ? "SP" : "PC"}</span>
               <span className="font-aurebesh text-[6px] opacity-50">{unit.type === "Primary" ? "primary" : "support"}</span>
             </span>
-            <span className="text-xl font-black leading-none text-emerald-500">{unit.points}</span>
+            <span className="text-xl font-black leading-none text-emerald-500">{Math.abs(unit.points)}</span>
           </div>
         </div>
       </div>
