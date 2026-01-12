@@ -12,7 +12,7 @@
 - [x] Task: Create reusable UI components for Unit Cards and Selection Lists. (f48ceda)
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Project Initialization & Core Components' (Protocol in workflow.md) (efb50f4)
 
-## Phase 3: List Builder Logic
+## Phase 3: List Builder Logic [checkpoint: 757076e]
 - [x] Task: Implement the squad-building state management using React Context. (800c882)
 - [x] Task: Write validation logic for AMG squad-building rules. (f906385)
 - [x] Task: Implement base64 export and import functionality. (5f2e479)
