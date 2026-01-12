@@ -1,0 +1,3379 @@
+[
+  {
+    "name": "General Anakin Skywalker",
+    "type": "Primary",
+    "points": 7,
+    "force": 4,
+    "stamina": 11,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "501st",
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/nn3k0her/starwarsshatterpointanakinskywalker.png?cc=0.24439914629314863,0.10803608537326083,0.24439914629314868,0.5514079570259559&width=120&height=120&v=1d978866fce1d70",
+    "abilityIds": [
+      "force-jump",
+      "im-going-to-end-this",
+      "deflect",
+      "this-is-where-the-fun-begins"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Asajj Ventress, Sith Assassin",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Dathomirian",
+      "Force User",
+      "Nightsister",
+      "Separatist Alliance"
+    ],
+    "image": "/media/vcsl0v33/star-wars-shatterpoint-asajj-ventress.png?cc=0.2277528722071984,0.24127063762714723,0.22775287220719806,0.39599434030647224&width=120&height=120&v=1d9788661888cf0",
+    "abilityIds": [
+      "dathomirian-dexterity",
+      "force-push",
+      "riposte",
+      "swift-retreat",
+      "sith-assassin"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Ahsoka Tano, Jedi no more",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic"
+    ],
+    "image": "/media/os1lmren/swp01_ahsoka_unit_article-1.png?cc=0.2757515951482757,0.10650094333415265,0.27521382918939835,0.5949024606670418&width=120&height=120&v=1d9788655b02be0",
+    "abilityIds": [
+      "force-speed",
+      "whats-the-matter-too-fast-for-you",
+      "deflect",
+      "youll-find-i-have-many-qualities-for-you-to-dislike",
+      "fierce-protector"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Lord Maul",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 11,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Dathomirian",
+      "Force User",
+      "Scoundrel",
+      "Shadow Collective"
+    ],
+    "image": "/media/klehavye/swp01_maul_unit_article-1.png?cc=0.36106843749097245,0.055200489566819375,0.34959087349240014,0.7505845273946226&width=120&height=120&v=1d978862f118b50",
+    "abilityIds": [
+      "force-speed",
+      "there-is-no-place-to-run",
+      "revenge-i-must-have-revenge",
+      "sustained-by-rage"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "CC-7567 Captain Rex",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "501st",
+      "Clone Trooper",
+      "Galactic Republic"
+    ],
+    "image": "/media/w3ieriga/shatterpointrexunit.png?cc=0.33586176406046314,0.05849111787527506,0.3349743123055672,0.7235489867454747&width=120&height=120&v=1d9788610a5ea80",
+    "abilityIds": [
+      "get-a-move-on-soldier",
+      "defensive-maneuver",
+      "im-always-first-kid",
+      "bring-it-on-clankers",
+      "brothers-in-arms"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Kalani, Super Tactical Droid",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 10,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Battle Droid",
+      "Droid",
+      "Separatist Alliance"
+    ],
+    "image": "/media/gtbfzv2n/star-wars-shatterpoint-kalani-unit-card.png?cc=0.03420858789375617,0.11329013239338553,0.31584990684171754,0.4563431952017255&width=120&height=120&v=1d97885e46be500",
+    "abilityIds": [
+      "roger-roger",
+      "tactical-network",
+      "target-concentrate-all-firepower",
+      "complete-analysis"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Bo-Katan Kryze",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Clan Kryze",
+      "Death Watch",
+      "Mandalorian",
+      "Nite Owls"
+    ],
+    "image": "/media/uh5b3qvr/shatterpoint-new-bo-katan-kryze.webp?cc=0.3228941684665227,0.10744353512040015,0.2783684997507891,0.6269228179509888&width=120&height=120&v=1db311f010bf670",
+    "abilityIds": [
+      "jet-pack",
+      "mandalorians-are-stronger-together",
+      "mandalore-will-survive",
+      "some-of-us-serve-a-higher-purpose"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Gar Saxon, Merciless Commander",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Mandalorian",
+      "Shadow Collective",
+      "Super Commando"
+    ],
+    "image": "/media/sp4njwnf/star-wars-shatterpoint-gar-saxon-character-card.png?cc=0.3576391465484177,0.1078035406972014,0.02379458696292531,0.4801156227787005&width=120&height=120&v=1d97cf99c160510",
+    "abilityIds": [
+      "pride-of-the-mandalore",
+      "jet-pack",
+      "mandalorians-are-stronger-together",
+      "ive-got-you-in-my-sights",
+      "pack-hunter"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "501st Clone Troopers",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "501st",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Trooper"
+    ],
+    "image": "/media/olaptf5u/shatterpoint501unit.png?cc=0.2373949579831933,0.11147069399657737,0.19987995198079228,0.515914043682278&width=120&height=120&v=1d978861b7a7020",
+    "abilityIds": [
+      "defensive-maneuver",
+      "coordinated-fire-strain",
+      "brother-in-arms"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "B1 Battle Droids",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "B1",
+      "Battle Droid",
+      "Droid",
+      "Separatist Alliance",
+      "Trooper"
+    ],
+    "image": "/media/arpd4hfq/star-wars-shatterpoint-b1-unit-card.png?cc=0.08943805527309534,0.11462858530443723,0.33768481254982835,0.505066156341524&width=120&height=120&v=1d97885cd80e3e0",
+    "abilityIds": [
+      "combat-ai-protocols",
+      "well-i-guess-im-in-charge-now",
+      "i-hate-this-job"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Clan Kryze Mandalorians",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Mandalorian",
+      "Death Watch",
+      "Clan Kryze",
+      "Trooper"
+    ],
+    "image": "/media/gptniics/shatterpoint-new-clan-kryze-mandalorians.webp?cc=0.10403167746580269,0.14749940251439705,0.2788748328705132,0.44140090581037167&width=120&height=120&v=1db311f1ef4d2b0",
+    "abilityIds": [
+      "jet-pack",
+      "mandalorians-are-stronger-together",
+      "helmet-visor"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Mandalorian Super Commandos",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Mandalorian",
+      "Shadow Collective",
+      "Super Commando",
+      "Trooper"
+    ],
+    "image": "/media/hdxbgbol/star-wars-shatterpoint-mandalorian-super-commando-unit-card.png?cc=0.2729543184088639,0.3695041808710872,0.12159053068143971,0.22802059650980516&width=120&height=120&v=1d97cf9aeed52b0",
+    "abilityIds": [
+      "jet-pack",
+      "mandalorians-are-stronger-together",
+      "no-mercy",
+      "victory-or-death"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "General Obi-Wan Kenobi",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "212th",
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/ih4jfp2m/star-wars-obi-wan-kenobi-unit-card-clear-1.png?cc=0.30915426037377264,0.11948512227642882,0.13425946875424222,0.5119645091732027&width=120&height=120&v=1d981df4356ea80",
+    "abilityIds": [
+      "hello-there",
+      "so-uncivilized",
+      "patience",
+      "knowledge-and-defense"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "CC-2224 Clone Commander Cody",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "212th",
+      "Clone Commando",
+      "Clone Trooper",
+      "Galactic Republic"
+    ],
+    "image": "/media/rbggh5uu/star-wars-shatterpoint-cody-unit-card.png?cc=0.2136827327597752,0.10579965953956338,0.23215481451720907,0.5263188473520832&width=120&height=120&v=1d9890915d71b30",
+    "abilityIds": [
+      "weve-got-a-big-problem",
+      "defensive-maneuver",
+      "say-goodnight-clankers",
+      "bring-it-down"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "212th Clone Troopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "212th",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Trooper"
+    ],
+    "image": "/media/acslwvjm/star-wars-shatterpoint-212th-unit-card.png?cc=0.28885135135135137,0.2894714889091369,0.19404991726420304,0.3681252970660275&width=120&height=120&v=1d9890930f6c550",
+    "abilityIds": [
+      "defensive-maneuver",
+      "coordinated-fire",
+      "brother-in-arms",
+      "clone-marksmen"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Count Dooku, Separatist Leader",
+    "type": "Primary",
+    "points": 7,
+    "force": 4,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Separatist Alliance",
+      "Sith"
+    ],
+    "image": "/media/skjjanqg/star-wars-shatterpoint-count-dooku-unit-card.png?cc=0.3114928549711159,0.10513539416153565,0.29325022803283674,0.6332557111360445&width=120&height=120&v=1d98379ba91a950",
+    "abilityIds": [
+      "leader-of-the-separatist-army",
+      "surely-you-can-do-better",
+      "twice-the-pride-double-the-fall",
+      "brave-but-foolish"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jango Fett, Bounty Hunter",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel",
+      "Separatist Alliance"
+    ],
+    "image": "/media/cxuf1zfk/star-wars-shatterpoint-jango-fett-unit-card-2.png?cc=0.4111046752238012,0.1162301185633882,0.10907957402448747,0.5660540464793976&width=120&height=120&v=1d98764c9fab370",
+    "abilityIds": [
+      "jet-pack",
+      "capture-wire",
+      "no-so-fast",
+      "im-just-looking-to-get-paid",
+      "my-client-is-getting-impatient"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "MagnaGuard",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Battle Droid",
+      "Droid",
+      "Separatist Alliance",
+      "Trooper"
+    ],
+    "image": "/media/xtxn0ays/star-wars-shatterpoint-magnaguard-unit-card.png?cc=0.2067745197168857,0.12869631449341137,0.18655207280080893,0.469764451777293&width=120&height=120&v=1d9837a22a18600",
+    "abilityIds": [
+      "protection-protocols",
+      "bodyguard",
+      "intercede"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "General Grievous",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 11,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Droid",
+      "Separatist Alliance"
+    ],
+    "image": "/media/fx4lex3u/star-wars-shatterpoint-grievous-unit-card.png?cc=0.2492163009404389,0.21096261464760352,0.280564263322884,0.47510671170949265&width=120&height=120&v=1d9932a75bf6f90",
+    "abilityIds": [
+      "onward",
+      "scuttle",
+      "i-have-been-trained-in-your-jedi-arts",
+      "appetite-for-destruction",
+      "another-fine-addition-to-my-collection"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Kraken, Super Tactical Droid",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 10,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Battle Droid",
+      "Droid",
+      "Separatist Alliance"
+    ],
+    "image": "/media/30hehhkx/star-wars-shatterpoint-kraken-unit-card.png?cc=0.30207973359303825,0.12068174627455211,0.32092928277465366,0.6308839076771067&width=120&height=120&v=1d997e5a19a01b0",
+    "abilityIds": [
+      "do-not-let-them-escape",
+      "tactical-network",
+      "complete-analysis",
+      "conquerors-resolve"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "B2 Battle Droids",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "B2",
+      "Battle Droid",
+      "Droid",
+      "Separatist Alliance",
+      "Trooper"
+    ],
+    "image": "/media/dttcpher/star-wars-shatterpoint-b2-unit-card.png?cc=0.021632463387798857,0.1888067983658207,0.5683382195160287,0.5409868315190038&width=120&height=120&v=1d997e5ab024d20",
+    "abilityIds": [
+      "relentless-advance",
+      "saturation-fire",
+      "enhanced-blast-armor"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Master Luminara Unduli",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/g4jnexnp/star-wars-shatterpoint-jedi-master-luminara-unit-card.png?cc=0.2362869198312236,0.13645595113585285,0.35273165652912486,0.5903448866749111&width=120&height=120&v=1d98e2121b957c0",
+    "abilityIds": [
+      "full-recovery",
+      "sprint",
+      "precise-strike",
+      "flow-of-the-force"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Barriss Offee, Jedi Padawan",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi",
+      "Padawan"
+    ],
+    "image": "/media/k5pbgrs2/star-wars-shatterpoint-barriss-offee-unit-card.png?cc=0.42543808589310755,0.12011409587227273,0.1494596238683037,0.5991348951787888&width=120&height=120&v=1d98e3912015ea0",
+    "abilityIds": [
+      "force-push",
+      "force-speed",
+      "slip-away",
+      "faithful-padawan"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Republic Clone Commandos",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Commando",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Trooper"
+    ],
+    "image": "/media/t5gpfyxv/star-wars-shatterpoint-clone-commandos-unit-card.png?cc=0.27553193648720664,0.23168922193586391,0.3544403114313872,0.5234003234491046&width=120&height=120&v=1d993fc7105fdc0",
+    "abilityIds": [
+      "defensive-maneuver",
+      "coordinated-fire",
+      "ascension-cables",
+      "brother-in-arms",
+      "commando-armor"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Padawan Ahsoka Tano",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi",
+      "Padawan"
+    ],
+    "image": "/media/3dsfrcau/shatterpoint-padawan-ahsoka-unit-card.png?cc=0.3130202060379829,0.09762816433509867,0.3287173667340726,0.6642175315220088&width=120&height=120&v=1da5b527cddaf80",
+    "abilityIds": [
+      "race-ya",
+      "she-is-fearless",
+      "deflect",
+      "getting-ahead-of-yourself-again-snips"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "104th Wolfpack Troopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Trooper",
+      "Galactic Republic",
+      "Trooper",
+      "Wolfpack"
+    ],
+    "image": "/media/htkdbxrd/shatterpoint-104th-wolfpack-trooper-unit-card.png?cc=0.43671390521598763,0.114179166250523,0.09577791339083808,0.5763909582950019&width=120&height=120&v=1da595103d9a830",
+    "abilityIds": [
+      "run-and-gun",
+      "coordinated-fire",
+      "pack-hunter"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Master Plo Koon",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/v02bwxwd/shatterpoint-jedi-master-plo-koon-unit-card.png?cc=0.3223108267586935,0.09905185022693067,0.3922358734011604,0.710372133764684&width=120&height=120&v=1da5b529b664e30",
+    "abilityIds": [
+      "i-know-if-we-work-together-we-will-stay-alive",
+      "force-push",
+      "deflect",
+      "we-can-do-this-the-simple-way-or-the-difficult-way"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "CC-3636 Commander Wolffe",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Trooper",
+      "Galactic Republic",
+      "Wolfpack"
+    ],
+    "image": "/media/aupalptu/shatterpoint-cc3636-commander-wolffe-unit-card.png?cc=0.3272120871172547,0.22618029266358128,0.19058908623322351,0.45466652710795824&width=120&height=120&v=1da5950f9d284b0",
+    "abilityIds": [
+      "flank-em",
+      "run-and-gun",
+      "pack-hunter",
+      "wolfpack"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Grand Inquisitor, Fallen Jedi",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Inquisitorius"
+    ],
+    "image": "/media/e4neig13/star-wars-shatterpoint-grand-inquisitor-unit-card.png?cc=0.3243873624533973,0.09900338060030274,0.3371000618044139,0.6779192673278664&width=120&height=120&v=1d99e2ce3d97810",
+    "abilityIds": [
+      "you-know-who-we-are",
+      "secrets-uncovered",
+      "the-temple-records-are-quite-complete",
+      "clearly-you-were-a-poor-student"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Third Sister",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Inquisitorius"
+    ],
+    "image": "/media/rbahd5em/star-wars-shatterpoint-third-sister-unit-card.png?cc=0.3333332856314071,0.08825415577826448,0.3412871048241244,0.695918506092239&width=120&height=120&v=1d99e2cda6aeb10",
+    "abilityIds": [
+      "force-jump",
+      "call-the-hunt",
+      "deflect",
+      "your-fear-betrays-you"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Fifth Brother",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Inquisitorius"
+    ],
+    "image": "/media/vcebkvec/star-wars-shatterpoint-fifth-brother-unit-card.png?cc=0.15412819258443916,0.1025942445254039,0.5439394402658024,0.6975656275769142&width=120&height=120&v=1d9a3ad69e81f30",
+    "abilityIds": [
+      "force-repulse",
+      "force-jump",
+      "enfeeble",
+      "resolve",
+      "inquisitorial-mandate"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Fourth Sister",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Inquisitorius"
+    ],
+    "image": "/media/31zl5j4v/star-wars-shatterpoint-fourth-sister-unit-card.png?cc=0.14871868701410884,0.12659111431657455,0.505758710048949,0.644717666473363&width=120&height=120&v=1d9a3ad71725bd0",
+    "abilityIds": [
+      "force-jump",
+      "force-pull",
+      "enfeeble",
+      "inquisitorial-mandate",
+      "swift-retreat"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Darth Vader, Jedi Hunter",
+    "type": "Primary",
+    "points": 7,
+    "force": 4,
+    "stamina": 12,
+    "durability": 3,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Galactic Republic",
+      "Inquisitorius",
+      "Sith"
+    ],
+    "image": "/media/cvhfip0s/star-wars-shatterpoint-darth-vader-jedi-hunter-unit-card.png?cc=0.36474296457247213,0.09600005685330865,0.3269005753596894,0.6999078976341653&width=120&height=120&v=1d9a2e885307c80",
+    "abilityIds": [
+      "vaders-fury",
+      "riposte",
+      "the-sith-lord-strikes-back",
+      "your-hatred-makes-you-powerful"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Obi-Wan Kenobi, Out of Hiding",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Force User",
+      "Jedi"
+    ],
+    "image": "/media/bo4dgs2m/star-wars-shatterpoint-obiwan-jedi-out-of-hiding-unit-card.png?cc=0.3455449696306311,0.03847813204712768,0.3617078419621576,0.7686035768874008&width=120&height=120&v=1d9a2e88f47cca0",
+    "abilityIds": [
+      "run",
+      "mind-trick",
+      "greater-purpose",
+      "last-stand-of-the-jedi"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Mother Talzin",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Dathomirian",
+      "Force User",
+      "Nightsister"
+    ],
+    "image": "/media/lyhckyo5/star-wars-shatterpoint-mother-talzin-unit-card.png?cc=0.34896341204901005,0.12760866265860632,0.33306482384364267,0.6628502323613&width=120&height=120&v=1d9a86514044e10",
+    "abilityIds": [
+      "obscuring-shadows",
+      "manipulating-hand",
+      "life-drain",
+      "wrath-of-the-great-mother"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Savage Opress",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 10,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Dathomirian",
+      "Force User",
+      "Separatist Alliance",
+      "Sith"
+    ],
+    "image": "/media/ixfhwc4v/star-wars-shatterpoint-savage-opress-unit-card.png?cc=0.43215768707248575,0.10843112659185608,0.2639278952275385,0.691728745510462&width=120&height=120&v=1d9b49933e74210",
+    "abilityIds": [
+      "dark-fury",
+      "furious-rush",
+      "overpowering-monster",
+      "pain-is-weakness",
+      "unwitting-brute"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Nightsister Acolytes",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Dathomirian",
+      "Nightsister",
+      "Trooper"
+    ],
+    "image": "/media/ysdce00m/star-wars-shatterpoint-nightsisters-unit-card.png?cc=0.5637490836069231,0.3472571944178492,0.1175054983584611,0.44269186822984286&width=120&height=120&v=1d9a86521838150",
+    "abilityIds": [
+      "acrobatic-advance",
+      "coordinate-fire",
+      "darkness-and-shadows",
+      "night-hunter"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Master Mace Windu",
+    "type": "Primary",
+    "points": 7,
+    "force": 4,
+    "stamina": 11,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/k3cdg1ey/shatterpoint-jedi-master-mace-windu-new.jpg?cc=0.27623501061449307,0.16199112031604598,0.03525732973779339,0.3767010720493098&width=120&height=120&v=1dbc8335b9e9b50",
+    "abilityIds": [
+      "rush-to-action",
+      "shatterpoint",
+      "tempered-agression",
+      "this-partys-over"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "CT-411 Commander Ponds",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Commando",
+      "Clone Trooper",
+      "Galactic Republic"
+    ],
+    "image": "/media/p4rh33xl/star-wars-shatterpoint-commander-ponds-unit-card.png?cc=0.3494368939834983,0.059753515074746924,0.3494368939834983,0.7422397526963573&width=120&height=120&v=1d9b9a9a6334610",
+    "abilityIds": [
+      "charge",
+      "incoming",
+      "forward-scout"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "ARF Clone Troopers",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "ARF",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Trooper"
+    ],
+    "image": "/media/qiwogg4e/star-wars-shatterpoint-arf-clone-troopers-unit-card.png?cc=0.1755055508652228,0.12037695051014927,0.4798985739474032,0.6530326682515343&width=120&height=120&v=1d9b9a99a163ae0",
+    "abilityIds": [
+      "defensive-maneuver",
+      "supporting-fire",
+      "brothers-in-arms",
+      "lay-low"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Cad Bane, Notorious Hunter",
+    "type": "Primary",
+    "points": 9,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/fxufe4lc/shatterpoint-cad-bane-notorious-hunter-new.jpg?width=120&height=120&v=1dbc839827b4790",
+    "abilityIds": [
+      "how-about-you-step-aside",
+      "rocket-boots",
+      "no-one-gets-between-me-and-my-job",
+      "ill-take-on-any-jobfor-the-right-price"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Aurra Sing",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/3oqnl42h/starwarsshatterpointaurrasingunitcard.png?cc=0.2833006834590311,0.10661527158923295,0.41063321668267105,0.693304355699346&width=120&height=120&v=1d9d65ae5381980",
+    "abilityIds": [
+      "double-the-contact-double-the-payout",
+      "hit-and-run",
+      "expendable-distraction",
+      "on-contract"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Bounty Hunters",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel",
+      "Trooper"
+    ],
+    "image": "/media/uevbbzgh/shatterpoint-bounty-hunters-new.jpg?width=120&height=120&v=1dbc839b199cf60",
+    "abilityIds": [
+      "on-the-trail",
+      "tools-of-the-trade",
+      "payday"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Queen Padmé Amidala",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Galactic Republic"
+    ],
+    "image": "/media/g2hnmz1n/shatterpoint-padme-amidala-unit-card.png?cc=0.325207387136983,0.08997896504617997,0.33093829247675405,0.6849077748448277&width=120&height=120&v=1d9ceff846c1b40",
+    "abilityIds": [
+      "royal-command",
+      "coordinated-fire",
+      "crack-shot",
+      "servant-of-the-people"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Sabé, Royal Bodyguard",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Galactic Republic",
+      "Handmaiden"
+    ],
+    "image": "/media/yexheddv/shatterpoint-sabe-unit-card.png?width=120&height=120&v=1d9d65d0ca039b0",
+    "abilityIds": [
+      "loyal-protectors",
+      "expose-flank",
+      "coordinated-assault",
+      "bodyguard"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Naboo Royal Handmaidens",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Galactic Republic",
+      "Handmaiden",
+      "Trooper"
+    ],
+    "image": "/media/c4xfmpuj/shatterpoint-haindmaden-unit-card.png?width=120&height=120&v=1d9d65d09e95710",
+    "abilityIds": [
+      "expose-flank",
+      "coordinated-fire",
+      "intercede"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Darth Vader, The Emperor's Servant",
+    "type": "Primary",
+    "points": 7,
+    "force": 3,
+    "stamina": 12,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Sith"
+    ],
+    "image": "/media/dzan4rqk/darth-vader-emperors-servant-unit-card.png?cc=0.31595552932687204,0.11344558030276003,0.257081776538528,0.6058034107483016&width=120&height=120&v=1da2df5051635b0",
+    "abilityIds": [
+      "you-dont-know-the-power-of-the-dark-side",
+      "anger-hate-aggression",
+      "you-are-unwise-to-lower-your-defenses",
+      "perhaps-i-can-find-new-ways-to-motivate-them",
+      "you-cannot-hide-forever"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Stormtrooper Sergeant",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Stormtrooper"
+    ],
+    "image": "/media/cusmhjkk/shatterpoint-stormtrooper-sergeant-unit-card.png?cc=0.38563973937917084,0.1167190000460346,0.2306966568685991,0.6282413094021233&width=120&height=120&v=1da433c111887d0",
+    "abilityIds": [
+      "inexorable-advance",
+      "imperial-firepower",
+      "coordinated-offensive",
+      "only-imperial-stormtroopers-are-so-precise"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Stormtroopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Stormtrooper",
+      "Trooper"
+    ],
+    "image": "/media/yxlh3upn/shatterpoint-stormtroopers-unit-card.png?cc=0.06993048191351481,0.12578542709442525,0.22310592671144105,0.40629622465734405&width=120&height=120&v=1da433c06841870",
+    "abilityIds": [
+      "assault-tactics",
+      "for-the-empire",
+      "only-imperial-stormtroopers-are-so-precise"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Knight Luke Skywalker",
+    "type": "Primary",
+    "points": 7,
+    "force": 3,
+    "stamina": 11,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Jedi",
+      "Rebel Alliance"
+    ],
+    "image": "/media/4lujrsnr/jedi-knight-luke-skywalker-unit-card.png?cc=0.35354537659026214,0.029768431544401144,0.3591313272368842,0.7792339240932127&width=120&height=120&v=1da2df51412e130",
+    "abilityIds": [
+      "return-of-the-jedi",
+      "you-can-either-profit-by-this-or-be-destroyed",
+      "deflect",
+      "i-will-not-fight-you",
+      "i-am-a-jedi-like-my-father-before-me"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Boushh (Leia Organa)",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spy"
+    ],
+    "image": "/media/wxqeini3/shatterpoint-boush-leia-organa-unit-card.png?cc=0.34353763059013465,0.07285212002420151,0.356956554005283,0.7277662951912718&width=120&height=120&v=1da33eba6305f10",
+    "abilityIds": [
+      "fan-out",
+      "low-blow",
+      "fearless-and-inventive",
+      "i-want-fifty-thousand-no-less"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Lando and R2-D2, Inside Job",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spy"
+    ],
+    "image": "/media/cumplhyw/shatterpoint-lando-and-r2d2-inside-job-unit-card.png?cc=0.0836935688204897,0.406066859381726,0.5032923577249573,0.3211655726821017&width=120&height=120&v=1da33ebdfd832b0",
+    "abilityIds": [
+      "mingle",
+      "element-of-suprise",
+      "forward-planning",
+      "clever-disguise"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Logray, Bright Tree Shaman",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Ewok",
+      "Shaman"
+    ],
+    "image": "/media/voybg0fg/shatterpoint-logray-bright-tree-shaman-unit-card.png?cc=0.22031713604747316,0.27169124178258447,0.2932778831655236,0.40497192206835725&width=120&height=120&v=1da433be109d3a0",
+    "abilityIds": [
+      "inspiring-presence",
+      "elders-command",
+      "stealthy-approach",
+      "protective-wards",
+      "secret-ingredients"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "C-3PO and R2-D2",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Droid",
+      "Rebel Alliance"
+    ],
+    "image": "/media/ezzfewdw/shatterpoint-c3po-and-r2d2-new.jpg?width=120&height=120&v=1dbc89ceef441c0",
+    "abilityIds": [
+      "brilliant-oration",
+      "r2-im-not-sure-thats-such-a-good-idea",
+      "divine-influence",
+      "goodness-gracious-me"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Ewok Trappers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Ewok",
+      "Scout"
+    ],
+    "image": "/media/nvzppd43/shatterpoint-ewok-trappers-unit-card.png?cc=0.07040415055682232,0.28471110293286145,0.26867915799213504,0.27594571512414334&width=120&height=120&v=1da433bda3bbb10",
+    "abilityIds": [
+      "stealthy-approach",
+      "battle-tactics-primitive-artifice",
+      "camouflage",
+      "strength-in-numbers"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Wicket, Intrepid Warrior",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Ewok",
+      "Warrior"
+    ],
+    "image": "/media/5mjny5kq/shatterpoint-wicket-intrepid-unit-card.png?cc=0.2957701733684306,0.16969551008765693,0.15961695561405095,0.46984129470650354&width=120&height=120&v=1da4f130186b7f0",
+    "abilityIds": [
+      "lead-the-charge",
+      "hunting-horn",
+      "stealthy-approach"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Leia Organa, Freedom Fighter",
+    "type": "Primary",
+    "points": 7,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Rebel Alliance",
+      "Scout",
+      "Warrior"
+    ],
+    "image": "/media/yyjle012/shatterpoint-leia-organa-freedom-fighter-unit-card.png?cc=0.4198285502565655,0.11248593504206025,0.265491636453457,0.679236778463854&width=120&height=120&v=1da3e939b4dc210",
+    "abilityIds": [
+      "infiltrate",
+      "defensive-maneuver",
+      "explosive-charge",
+      "coordinated-fire-exposed",
+      "unexpected-allies"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Paploo, Curious Creature",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Ewok",
+      "Scout"
+    ],
+    "image": "/media/ksoflaee/shatterpoint-paploo-curious-creature-unit-card.png?cc=0.23271560940841052,0.23357924002488853,0.3396293656450463,0.48336851324790303&width=120&height=120&v=1da3e93a1ab6590",
+    "abilityIds": [
+      "feigned-retreat",
+      "stealthy-approach",
+      "fearless-and-inventive",
+      "what-does-this-do"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Chief Chirpa",
+    "type": "Primary",
+    "points": 7,
+    "force": 3,
+    "stamina": 10,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Ewok",
+      "Chief"
+    ],
+    "image": "/media/41ahansc/shatterpoint-chief-chirpa-unit-card.png?cc=0.4749627388624612,0.11631019247504677,0.14253056727039617,0.6305199094258372&width=120&height=120&v=1da4f12f9e71e90",
+    "abilityIds": [
+      "bola-toss",
+      "stealthy-approach",
+      "mobilize-the-village",
+      "sharp-stick",
+      "bright-tree-defender"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Ewok Hunters",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Endor",
+      "Ewok",
+      "Warrior"
+    ],
+    "image": "/media/kkvhwazy/shatterpoint-ewok-hunters-unit-card.png?cc=0.11270971198205525,0.2252898856566464,0.32507139746322206,0.40259401412008394&width=120&height=120&v=1da4f12efb1e630",
+    "abilityIds": [
+      "stealthy-approach",
+      "coordinated-fire",
+      "camouflage",
+      "strength-in-numbers"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Moff Gideon",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Scoundrel"
+    ],
+    "image": "/media/tqvf04co/shatterpoint-moff-gideon-unit-card.png?cc=0.35483887479881915,0.03183967428314842,0.36426224879668645,0.7807903136627141&width=120&height=120&v=1da6a851f6eca40",
+    "abilityIds": [
+      "long-live-the-empire",
+      "assume-that-i-know-everything",
+      "you-have-something-i-want"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Death Trooper Escort",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Death Trooper",
+      "Galactic Empire",
+      "Stormtrooper"
+    ],
+    "image": "/media/ipun0yn3/shatterpoint-death-trooper-escort-unit-card.png?cc=0.34790257566441213,0.03847275365285973,0.3472193755551001,0.7580491270275711&width=120&height=120&v=1da70786c76ea90",
+    "abilityIds": [
+      "imperial-efficiency",
+      "tactical-advance",
+      "disciplined",
+      "rigorous-training"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Dark Troopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Droid",
+      "Galactic Empire"
+    ],
+    "image": "/media/ckfo10hn/shatterpoint-dark-trooper-unit-card.png?cc=0.04692556634304205,0.3408845738942826,0.46763754045307443,0.3354908306364617&width=120&height=120&v=1da7079427ca670",
+    "abilityIds": [
+      "jump-boots",
+      "coordinated-fire-strain",
+      "immovable",
+      "unrelenting"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Hondo, Honest Businessman",
+    "type": "Primary",
+    "points": 7,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars",
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Mercenary",
+      "Scoundrel",
+      "Weequay"
+    ],
+    "image": "/media/ykyj2zvy/shatterpoint-hondo-honest-businessman-new.jpg?width=120&height=120&v=1dbc839cdf0e810",
+    "abilityIds": [
+      "inspiring-stories-so-many-of-them-true",
+      "what-have-we-here",
+      "this-effort-is-no-longer-profitable",
+      "fair-whats-fair"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Gwarm",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Mercenary",
+      "Scoundrel",
+      "Weequay"
+    ],
+    "image": "/media/y2nn0unb/shatterpoint-gwarm-new.jpg?width=120&height=120&v=1dbc83a0b4f5b10",
+    "abilityIds": [
+      "get-moving-you-dogs",
+      "spotchka-rations",
+      "exit-strategy",
+      "pack-hunter",
+      "ive-got-you-in-my-sights"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Weequay Pirates",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Galactic Civil War",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Mercenary",
+      "Scoundrel",
+      "Trooper",
+      "Weequay"
+    ],
+    "image": "/media/hyyjvkqj/shatterpoint-weequay-pirates-new.jpg?width=120&height=120&v=1dbc83e32677490",
+    "abilityIds": [
+      "raiding-party",
+      "exit-strategy",
+      "greedy",
+      "pack-hunter"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "The Mandalorian",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 11,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mandalorian",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/vxwht3l2/shatterpoint-the-mandalorian-unit-card.png?cc=0.4178951289981618,0.029765155302945084,0.3168528816119178,0.7924122819775551&width=120&height=120&v=1da7b054e1da6f0",
+    "abilityIds": [
+      "a-clan-of-two",
+      "fearless-and-inventive",
+      "do-the-magic-hand-thing",
+      "this-is-the-way"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Greef Karga",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/fnknuc05/shatterpoint-greef-karga-unit-card.png?cc=0.345679012345679,0.05484070303322764,0.345679012345679,0.7395122284657338&width=120&height=120&v=1da6f492a730e10",
+    "abilityIds": [
+      "some-of-my-favorite-people-are-bounty-hunters",
+      "close-the-deal",
+      "there-is-one-job",
+      "wolves-at-my-back"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "IG-11, Assassin Droid",
+    "type": "Support",
+    "points": -5,
+    "force": 0,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel",
+      "Droid"
+    ],
+    "image": "/media/r0ponaz2/shatterpoint-ig-11-assassin-droid-unit-card.png?cc=0.3570736434108527,0.05557901928546312,0.3522286821705426,0.7504069599679708&width=120&height=120&v=1da6f49238b2bf0",
+    "abilityIds": [
+      "on-the-hunt",
+      "multithread-targeting-protocol",
+      "are-you-refusing-my-request",
+      "victory-through-combat-is-impossible"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Clone Sergeant Hunter",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Scoundrel"
+    ],
+    "image": "/media/yn4f2zrz/shatterpoint-clone-sergeant-hunter-unit-card.png?cc=0.3533724340175953,0.06282937579550034,0.3533724340175953,0.7411226251193903&width=120&height=120&v=1da74b1c73cb990",
+    "abilityIds": [
+      "we-prefer-going-to-them",
+      "striking-distance",
+      "enhanced-tracker",
+      "its-hard-to-compete-with-a-jedi",
+      "the-leader-of-the-batch"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Wrecker and Omega",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 10,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Scoundrel"
+    ],
+    "image": "/media/huvim3cq/shatterpoint-wrecker-and-omega-unit-card.png?cc=0.35016190298275107,0.11263806134769908,0.15478859206675388,0.5571454817648113&width=120&height=120&v=1da74b1b6705720",
+    "abilityIds": [
+      "bulldoze",
+      "hahahaha-yeah",
+      "i-wasnt-sneaking",
+      "the-muscle-of-the-batch"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Crosshair",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic"
+    ],
+    "image": "/media/xcapxy2x/shatterpoint-crosshair-unit-card.png?cc=0.23770748512370812,0.1317080225014076,0.359066708424679,0.6038816126122888&width=120&height=120&v=1da7a2c3f9378f0",
+    "abilityIds": [
+      "trick-shot",
+      "find-the-shot",
+      "relax-ill-handle-this",
+      "the-deadeye-of-the-batch"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Echo and Tech",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars",
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic",
+      "Scoundrel"
+    ],
+    "image": "/media/luud55tt/shatterpoint-echo-and-tech-unit-card.png?cc=0.08303391362803957,0.3273214416683546,0.5020283270358609,0.40058822434076047&width=120&height=120&v=1da7a2d291240b0",
+    "abilityIds": [
+      "fight-smarter-not-harder",
+      "keep-a-low-profile",
+      "forward-planning",
+      "the-brains-of-the-batch"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Commander Iden Versio",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Scout"
+    ],
+    "image": "/media/lrmh2qmm/shatterpoint-commander-iden-versio-unit-card.png?cc=0.36802143052143055,0.027832339810055694,0.3617082992082993,0.7914855853574516&width=120&height=120&v=1da9b3e49bc3640",
+    "abilityIds": [
+      "today-the-rebellion-dies",
+      "covert-operations",
+      "id10-seeker-droid",
+      "the-empire-sends-its-regards"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Imperial Special Forces",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Scout",
+      "Trooper"
+    ],
+    "image": "/media/k32pevoj/shatterpoint-imperial-special-forces-unit-card.png?cc=0.11403508771929824,0.1113270405330372,0.35964912280701755,0.5379905900230866&width=120&height=120&v=1da9b40a5b51050",
+    "abilityIds": [
+      "special-forces-conditioning",
+      "covert-operations",
+      "infiltration"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Gideon Hask, Inferno Squad",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Scout"
+    ],
+    "image": "/media/shqlfkyc/shatterpoint-gideon-hask-inferno-squad-unit-card.png?cc=0.3492534036012297,0.035519659948690566,0.34771629336846716,0.7623478421989672&width=120&height=120&v=1da9b4098cdfe60",
+    "abilityIds": [
+      "covert-operations",
+      "long-live-the-empire",
+      "defiance-will-be-the-death-of-you",
+      "may-we-live-up-to-our-name"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Del Meeko, Inferno Squad",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Scout"
+    ],
+    "image": "/media/hhklqjqr/shatterpoint-del-meeko-inferno-squad-unit-card.png?cc=0.3611111111111111,0.03084997750241814,0.3611111111111111,0.7832418611292977&width=120&height=120&v=1da9b45bf2bfa30",
+    "abilityIds": [
+      "trick-shot",
+      "covert-operations",
+      "deadeye",
+      "special-forces-sniper"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "General Solo",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel",
+      "Scout"
+    ],
+    "image": "/media/440porm3/shatterpoint-general-solo-unit-card.png?cc=0.3610229276895943,0.04734522263737621,0.35326278659612,0.7618605965851375&width=120&height=120&v=1da9c1053694a70",
+    "abilityIds": [
+      "then-well-do-it-real-quiet-like",
+      "outnumbered-not-outgunned",
+      "lets-keep-a-little-optimism-here",
+      "hey-its-me"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Chewie",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 12,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel",
+      "Scout"
+    ],
+    "image": "/media/qrxmxnvf/shatterpoint-chewie-unit-card.png?cc=0.3347808105872622,0.08088136441689345,0.34263854425144746,0.7032252868973573&width=120&height=120&v=1da9c10c6820330",
+    "abilityIds": [
+      "wookiee-loyalty",
+      "its-not-wise-to-upset-a-wookiee",
+      "bodyguard",
+      "intimidating-presence"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Rebel Commandos",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scout",
+      "Trooper"
+    ],
+    "image": "/media/avhlwurm/shatterpoint-rebel-commandos-unit-card.png?cc=0.3512468434343434,0.08682577867814638,0.3362531565656566,0.704260572296784&width=120&height=120&v=1da9c11a64a8690",
+    "abilityIds": [
+      "commando-doctrines",
+      "coordinated-fire",
+      "camouflage",
+      "infiltration"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Kanan Jarrus, Spectre-1",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Jedi",
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spectre"
+    ],
+    "image": "/media/oponhs0f/shatterpoint-kanan-jarrus-spectre-1-unit-card.png?cc=0.36262626262626263,0.038251086124887555,0.35959595959595964,0.7763577384950605&width=120&height=120&v=1daa141d9065cf0",
+    "abilityIds": [
+      "a-man-with-two-names",
+      "force-push",
+      "deflect",
+      "now-i-know-theres-something-stronger-than-fear"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Ezra Bridger, Spectre-6",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Padawan",
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spectre"
+    ],
+    "image": "/media/5hgo2xlr/shatterpoint-ezra-bridger-spectre-6-unit-card.png?cc=0.45652173913043476,0.11554638011050589,0.10869565217391304,0.5944374273187423&width=120&height=120&v=1daa141b72dcff0",
+    "abilityIds": [
+      "force-jump",
+      "unreliable-information",
+      "helpful-hand",
+      "thanks-for-doing-the-heavy-lifting",
+      "this-helmet-is-property-of-ezra-bridger"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "\"Zeb\" Orrelios, Spectre-4",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Spectre",
+      "Warrior"
+    ],
+    "image": "/media/xaceb2ve/shatterpoint-zeb-orrelios-spectre-4-unit-card.png?cc=0.3576205870639773,0.051827844864438845,0.3482617658771992,0.7519847307494644&width=120&height=120&v=1daa141ccd8fe10",
+    "abilityIds": [
+      "this-is-gonna-hurt-pal",
+      "lasan-honor-guard",
+      "its-just-something-about-the-feel-of-their-helmets-on-my-fists",
+      "karabast"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Sabine Wren, Spectre-5",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Clan Wren",
+      "Mandalorian",
+      "Rebel Alliance",
+      "Spectre"
+    ],
+    "image": "/media/ihybe0en/shatterpoint-sabine-wren-spectre-5-unit-card.png?cc=0.3991299804643133,0.1017058857376622,0.29783971650538366,0.6963860833704091&width=120&height=120&v=1daa6b773793440",
+    "abilityIds": [
+      "my-friends-make-the-impossible-possible",
+      "im-gonna-go-add-some-fireworks-to-the-celebration",
+      "i-forged-this-armor-with-my-family",
+      "daughter-of-mandalore"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "\"Chopper\" (C1-10P), Spectre-3",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Droid",
+      "Rebel Alliance",
+      "Spectre"
+    ],
+    "image": "/media/vjaj344d/shatterpoint-chopper-c1-10p-spectre-3-unit-card.png?cc=0.14285714285714285,0.1581281226704972,0.38095238095238093,0.5242350949901079&width=120&height=120&v=1daa6b77ca69990",
+    "abilityIds": [
+      "mayhem",
+      "rocket-booster",
+      "chopper-sometimes-you-do-it-right",
+      "sturdy-construction",
+      "is-that-one-of-ours"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Hera Syndulla, Spectre-2",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Spectre"
+    ],
+    "image": "/media/hylihepi/shatterpoint-hera-syndulla-spectre-2-unit-card.png?cc=0.3478562801932367,0.07035141507536072,0.3396437198067633,0.7214309280673378&width=120&height=120&v=1daa6b765965d30",
+    "abilityIds": [
+      "phoenix-leader",
+      "we-will-not-stand-down",
+      "crew-of-the-ghost",
+      "we-have-hope"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Princess Leia, Charming to the last",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Spy",
+      "Warrior"
+    ],
+    "image": "/media/wufn3gss/shatterpoint-princess-leia-charming-to-the-last-unit.png?cc=0.02727272727272727,0.12487373737373737,0.5727272727272728,0.608459595959596&width=120&height=120&v=1dae8ea2fb0fb10",
+    "abilityIds": [
+      "into-the-garbage-chute-flyboy",
+      "its-a-wonder-youre-still-alive",
+      "crack-shot",
+      "somebodys-gotta-save-our-skins"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Luke Skywalker, Daring Hero",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Rebel Alliance",
+      "Spy"
+    ],
+    "image": "/media/5odjpnrl/shatterpoint-luke-skywalker-hero-unit.png?cc=0.33045977011494254,0.09245411005927193,0.32471264367816094,0.6777884754774989&width=120&height=120&v=1dae8eac65c25d0",
+    "abilityIds": [
+      "im-here-to-rescue-you",
+      "grappling-hook",
+      "hes-the-brains-sweetheart",
+      "oh-the-uniform"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Han and Chewie, in it for the money",
+    "type": "Support",
+    "points": -5,
+    "force": 0,
+    "stamina": 10,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Mercenary",
+      "Scoundrel",
+      "Spy"
+    ],
+    "image": "/media/ehfnzfqf/shatterpoint-han-and-chewie-unit.png?cc=0.14438405797101447,0.14220849829236962,0.35561594202898555,0.5250127995445689&width=120&height=120&v=1dae8eabe40f3d0",
+    "abilityIds": [
+      "look-out-hes-loose",
+      "boring-conversation-anyway",
+      "i-expect-to-be-well-paid",
+      "were-all-fine-here-thank-you"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Grand Admiral Thrawn",
+    "type": "Primary",
+    "points": 7,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Warrior",
+      "Officer"
+    ],
+    "image": "/media/wcsfrrxu/shatterpoint-grand-admiral-thrawn-unit.png?cc=0.360752688172043,0.029798768556913834,0.3535330261136713,0.7794070506655998&width=120&height=120&v=1dad24b4bc801f0",
+    "abilityIds": [
+      "i-want-you-to-know-failure-utter-defeat",
+      "battle-tactics-architects-of-their-own-destruction",
+      "we-must-wait-and-watch",
+      "to-defeat-an-enemy-you-must-know-whem"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Agent Kallus, Inside Man",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Spy",
+      "Trooper",
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spectre"
+    ],
+    "image": "/media/fjjd5wpz/shatterpoint-agent-kallus-inside-man-unit.png?cc=0.35576666999567236,0.04786253850759952,0.35011568294550416,0.7555128506452761&width=120&height=120&v=1dad24b41ab3390",
+    "abilityIds": [
+      "all-leads-must-be-pursued",
+      "prepared-for-any-encounter",
+      "imperial-intelligence",
+      "uncertain-loyalties"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "ISB Agents",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Trooper",
+      "Spy"
+    ],
+    "image": "/media/jhlju1wo/shatterpoint-isb-agents-unit.png?cc=0.3853530950305144,0.04111436904859211,0.3443766346992153,0.7786052950290486&width=120&height=120&v=1dad24b54328c70",
+    "abilityIds": [
+      "assault-tactics",
+      "imperial-detention",
+      "brutal-suppression"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "ES-04, Firebrand",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Galactic Empire"
+    ],
+    "image": "/media/34wfx1dj/shatterpoint-es04-firebrand-unit-card.png?cc=0.3235294117647059,0.11114517358895754,0.08823529411764719,0.49560560471679377&width=120&height=120&v=1daf86c3e9f3ab0",
+    "abilityIds": [
+      "marching-orders",
+      "prescribed-fire",
+      "obscuring-flames",
+      "cant-stand-the-heat"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Paz Vizsla",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 3,
+    "eras": [
+      "The New Republic"
+    ],
+    "keywords": [
+      "Mandalorian",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/rtubbfoz/shatterpoint-paz-vizsla-unit-new.png?cc=0.3655230149213289,0.016534833384539004,0.3675552598745872,0.8056057052331966&width=120&height=120&v=1db09c1ace4b750",
+    "abilityIds": [
+      "we-are-mandalorians",
+      "ill-cover-the-rear",
+      "go-there-are-too-many-this-is-the-way",
+      "descendent-of-the-great-house-vizsla"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Covert Mandalorians",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "The New Republic"
+    ],
+    "keywords": [
+      "Mandalorian",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/10vfpud3/shatterpoint-covert-mandalorians-unit-new.png?cc=0.49489750728789994,0.145205678346021,0.08920119995224836,0.5773889862246943&width=120&height=120&v=1db09c1b9179470",
+    "abilityIds": [
+      "jet-pack",
+      "mandalorian-armanents",
+      "mandalorians-are-stronger-together",
+      "our-secrecy-is-our-survival-this-is-the-way"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Boba Fett, On Contract",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Galactic Empire",
+      "Scoundrel"
+    ],
+    "image": "/media/usdlegz2/shatterpoint-boba-fett-on-contract-unit-card-new.png?cc=0.384086769332671,0.11785381641158169,0.11914224209306176,0.5504712250477881&width=120&height=120&v=1db14e819d32dc0",
+    "abilityIds": [
+      "youre-running-out-of-options",
+      "knee-rockets",
+      "whipcord-launcher",
+      "dead-or-alive",
+      "hired-hand"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Dengar, The Demolisher",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/5uhc4dyg/shatterpoint-dengar-the-demolisher-unit-card-new.png?cc=0.3497591115799377,0.07428616234291291,0.3570645672942653,0.7299712391740922&width=120&height=120&v=1db14e80fa177d0",
+    "abilityIds": [
+      "on-the-trail",
+      "payday",
+      "explosive-regards",
+      "being-underestimated-has-its-values",
+      "not-just-a-pretty-face"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "General Veers, Tactical Genius",
+    "type": "Primary",
+    "points": 7,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Officer"
+    ],
+    "image": "/media/o3ndsxon/shatterpoint-general-veers-tactical-genius-unit-card-new.png?cc=0.3589093701996928,0.02813612336041797,0.3553763440860215,0.7812818072359451&width=120&height=120&v=1db0ea258722cd0",
+    "abilityIds": [
+      "you-have-your-orders",
+      "i-will-have-results",
+      "prepare-for-a-surface-attack",
+      "we-are-the-storm"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Snowtrooper Lieutenant",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Stormtrooper"
+    ],
+    "image": "/media/iruarike/shatterpoint-snowtrooper-lieutenant-unit-card-new.png?cc=0.3682960557960558,0.02908817984511809,0.3539261664261665,0.7856236971235683&width=120&height=120&v=1db0ea281b141d0",
+    "abilityIds": [
+      "press-on",
+      "dogged-assault",
+      "commanding-presence",
+      "only-imperial-stormtroopers-are-so-precise"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Lando Calrissian, Galactic Entrepeneur",
+    "type": "Primary",
+    "points": 8,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bespin",
+      "Scoundrel",
+      "Galactic Empire",
+      "Rebel Alliance"
+    ],
+    "image": "/media/bczddusw/shatterpoint-lendo-calrissian-unit-card-new.jpeg?cc=0.35755336617405586,0.034997797545021136,0.3567323481116584,0.7742080216774926&width=120&height=120&v=1db056874ac05d0",
+    "abilityIds": [
+      "how-you-doin-ya-old-pirate",
+      "hedged-bets",
+      "sabacc-shift",
+      "conflicting-responsibilities"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Lobot, Computer Liaison Officer",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bespin",
+      "Scoundrel"
+    ],
+    "image": "/media/jurfgp53/shatterpoint-lobot-unit-card.jpeg?cc=0.35453869047619047,0.029998076877861195,0.35974702380952384,0.7794198537185019&width=120&height=120&v=1db0568debb0de0",
+    "abilityIds": [
+      "detain",
+      "security-network",
+      "battlefield-calculations",
+      "lockdown"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "CT-9904, Elite Squad Leader",
+    "type": "Primary",
+    "points": 8,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Clone Trooper",
+      "Galactic Empire"
+    ],
+    "image": "/media/bb1bagrq/shatterpoint-ct9904-elite-squad-leader-unit-card.png?cc=0.3386752136752137,0.10371623783557844,0.27670940170940167,0.6388724618083359&width=120&height=120&v=1daf86bed238c90",
+    "abilityIds": [
+      "move-to-position",
+      "reflector-discs",
+      "expendable-distraction",
+      "genetically-bred-deadeye"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Elite Squad Troopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Trooper"
+    ],
+    "image": "/media/4ronclp4/shatterpoint-elite-squad-troopers-unit-card.png?cc=0.15595238095238095,0.1673886734164105,0.344047619047619,0.4987215102229885&width=120&height=120&v=1daf86cfb138d90",
+    "abilityIds": [
+      "tactical-advance",
+      "supporting-fire",
+      "supporting-fire",
+      "the-future-of-imperial-might"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "The Armorer",
+    "type": "Primary",
+    "points": 9,
+    "force": 2,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "The New Republic"
+    ],
+    "keywords": [
+      "Mandalorian",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/mkhhhls4/shatterpoint-the-armorer-unit-new.png?cc=0.3672051578161862,0.014134492787804135,0.3618288484160317,0.805131728068874&width=120&height=120&v=1db09c1c95a2d70",
+    "abilityIds": [
+      "wisdom-of-the-mandalore",
+      "both-hunter-and-prey",
+      "just-as-we-shape-mandalorian-steel-we-shape-ourselves",
+      "our-survival-is-our-strength-this-is-the-way"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Snowtroopers",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Stormtrooper",
+      "Trooper"
+    ],
+    "image": "/media/c5yljaxm/shatterpoint-snowtroopers-unit-card-new.png?cc=0.3450226244343892,0.05321836949472614,0.36085972850678727,0.7502664988401357&width=120&height=120&v=1db0ea29805cf50",
+    "abilityIds": [
+      "forced-march",
+      "assault-tactics",
+      "only-imperial-stormtroopers-are-so-precise"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Wing Guard",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bespin",
+      "Scoundrel",
+      "Trooper"
+    ],
+    "image": "/media/cn5lvchn/shatterpoint-wing-guard-unit-card.jpeg?cc=0.05015255530129672,0.17692667955200006,0.5150648360030511,0.5324108522392075&width=120&height=120&v=1db0568a43891b0",
+    "abilityIds": [
+      "headlong-assault",
+      "rapid-response-team",
+      "security-force"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "IG-88B, Created to Succeed",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Droid",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/fzchu1c2/shatterpoint-ig-88b-created-to-succeed-unit-card-new.png?cc=0.37766087594812825,0.04508424258862666,0.3554173988477879,0.7768794973597428&width=120&height=120&v=1db14e83be62bb0",
+    "abilityIds": [
+      "high-priority-target",
+      "always-gets-the-job-done",
+      "calculated-plans",
+      "i-engineer-success-yet-it-eludes-me"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Bossk, Single-Minded Slayer",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Bounty Hunter",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "/media/dixhkiof/shatterpoint-bossk-singleminded-slayer-unit-card-new.png?cc=0.4313254439647332,0.12488992958067041,0.1881691179783812,0.6208081292478453&width=120&height=120&v=1db14e8580125c0",
+    "abilityIds": [
+      "regeneration",
+      "explosive-ordnance",
+      "payday",
+      "we-have-a-job-to-do"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Master Ki-Adi-Mundi",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/5s0eouae/shatterpoint-jedi-master-ki-adi-mundi-unit.png?cc=0.3345161290322581,0.0846751804553026,0.3429032258064516,0.7003904640790959&width=120&height=120&v=1db531b7fc06820",
+    "abilityIds": [
+      "wise-counsel",
+      "force-push",
+      "force-enhanced-reflexes",
+      "guardians-of-the-republic"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Master Shaak Ti",
+    "type": "Secondary",
+    "points": -5,
+    "force": 1,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/345buocn/shatterpoint-jedi-master-shaak-ti-unit.png?cc=0.3854166666666667,0.19471063319898538,0.11458333333333333,0.4710275283609032&width=120&height=120&v=1db531b70f63e50",
+    "abilityIds": [
+      "unity-wins-war",
+      "force-repulse",
+      "feinting-blow",
+      "virtuoso"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Padawan Learners",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Republic",
+      "Jedi",
+      "Padawan"
+    ],
+    "image": "/media/gpenhu0z/shatterpoint-padawan-learners.png?cc=0.21078431372549022,0.1111111111111111,0.20098039215686286,0.49673202614379086&width=120&height=120&v=1db531b77f61540",
+    "abilityIds": [
+      "lessons-learned",
+      "force-rush",
+      "deflect",
+      "stretch-out-with-your-feelings"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Shifting Priorities",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/ruyd53z5/shatterpoint-shifting-priorities.png?width=120&height=120&v=1db613fe67edfb0",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Sabotage Showdown",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/obzmcokx/sabotage-showdown.png?width=120&height=120&v=1db62b601b15390",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Never Tell Me The Odds",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/wt1ft2p2/never-tell-me-the-odds.png?width=120&height=120&v=1db62b8d33a9d20",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Ewok Traps",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/ylzbemev/01092024_transmission-image_4-2.png?width=120&height=120&v=1da433ab7828780",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "I Expect Results, Not Perfection",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/1gvf2pdf/shatterpoint-i-expect-results-not-perfection.png?width=120&height=120&v=1db64d3770847b0",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Sometimes Brutality Serves a Purpose",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/2oebxm0r/shatterpoint-sometimes-brutality-serves-a-purpose.png?width=120&height=120&v=1db64d377011bc0",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Turn Their Strength Against Them",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/s1sejv1m/shatterpoint-turn-their-strength-against-them.png?width=120&height=120&v=1db64d376f16450",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Jedi Master Kit Fisto",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Aquatic",
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/ex0pb2mb/shatterpoint-jedi-master-kit-fisto-unit-card.png?cc=0.41203703703703703,0.10981917928598141,0.17129629629629622,0.6119393070801845&width=120&height=120&v=1db7e569f4f6770",
+    "abilityIds": [
+      "force-speed",
+      "riposte",
+      "supporting-fire",
+      "im-afraid-i-must-request-your-surrender"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Nahdar Vebb, Jedi Knight",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Aquatic",
+      "Force User",
+      "Galactic Republic",
+      "Jedi"
+    ],
+    "image": "/media/vv1pcmd1/shatterpoint-nahdar-veb-jedi-knight-unit-card.png?cc=0.3108974358974359,0.1142781779019083,0.30448717948717946,0.6288835018207063&width=120&height=120&v=1db7e58264883f0",
+    "abilityIds": [
+      "you-cant-defeat-us-all",
+      "i-will-hold-them-off",
+      "i-got-carried-away",
+      "ive-been-waiting-for-this"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "CC-3714 Clone Commander Fil",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Trooper",
+      "Fil's Squad",
+      "Galactic Republic"
+    ],
+    "image": "/media/44vf2sdw/shatterpoint-cc-3714-clone-commander-fil-unit-card.png?cc=0.35265151515151516,0.04594944731685596,0.34431818181818186,0.7515804170281531&width=120&height=120&v=1db7e581633b1b0",
+    "abilityIds": [
+      "grappling-hook",
+      "we-can-take-him-down-easy",
+      "we-specialize-in-making-entrances",
+      "commanding-presence"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Fil's Clones",
+    "type": "Support",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Trooper",
+      "Fil's Squad",
+      "Galactic Republic",
+      "Trooper"
+    ],
+    "image": "/media/5owbr3md/shatterpoint-fils-clones-unit-card.png?cc=0.20584045584045585,0.3361579490304274,0.4095441595441595,0.40700373069218726&width=120&height=120&v=1db7e581e4ee3b0",
+    "abilityIds": [
+      "defensive-maneuver",
+      "supporting-fire",
+      "we-can-take-him-down-easily",
+      "brother-in-arms"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Director Krennic",
+    "type": "Primary",
+    "points": 9,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Officer"
+    ],
+    "image": "/media/ai4hgops/shatterpoint-director-krennic-unit.png?cc=0.35625,0.050782742441450875,0.3580357142857143,0.7582104927356283&width=120&height=120&v=1db88872537ad90",
+    "abilityIds": [
+      "deploy-the-garrison",
+      "your-concerns-are-hardly-warranted",
+      "we-stand-here-amidst-my-achievement",
+      "peace-and-security-for-the-galaxy"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Shoretroopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Stormtrooper",
+      "Trooper"
+    ],
+    "image": "/media/x05lno5r/shatterpoint-shoretroopers-unit.png?cc=0.033333333333333326,0.15621987604527557,0.5121212121212121,0.5399057253728049&width=120&height=120&v=1db88881551be10",
+    "abilityIds": [
+      "defensive-maneuver",
+      "for-the-empire",
+      "garrison-force",
+      "only-imperial-stormtroopers-are-so-precise"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Ahsoka Tano Fulcrum",
+    "type": "Primary",
+    "points": 8,
+    "force": 4,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Rebel Alliance"
+    ],
+    "image": "/media/1ocfyvzw/shatterpoint-ahsoka-tano-fulcrum-unit.png?cc=0.28373045985733797,0.13547832245661964,0.2609652451054788,0.5609854808519249&width=120&height=120&v=1db888985187030",
+    "abilityIds": [
+      "she-is-fearless",
+      "riposte",
+      "then-i-will-avenge-his-death",
+      "i-am-no-jedi"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Darth Vader, Fallen Master",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Inquisitorius",
+      "Sith"
+    ],
+    "image": "/media/oowlj2d5/shatterpoint-darth-vader-fallen-master-unit.png?cc=0.3273809523809524,0.10438035066814572,0.3154761904761905,0.6568611933032033&width=120&height=120&v=1db888a6357e290",
+    "abilityIds": [
+      "anakin-skywalker-was-weak",
+      "then-you-will-die-braver-than-most",
+      "the-power-within-will-soon-serve-the-emperor",
+      "more-machine-now-than-man"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Captain Cassian Andor",
+    "type": "Primary",
+    "points": 9,
+    "force": 2,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spy"
+    ],
+    "image": "/media/rf2nfiy1/shatterpoint-captain-cassian-andor-character.png?cc=0.3524891774891775,0.03413068001041273,0.3617965367965368,0.7749689063720244&width=120&height=120&v=1db8e87edb93a30",
+    "abilityIds": [
+      "we-need-to-blend-in",
+      "this-town-is-ready-to-blow",
+      "weve-all-done-terrible-things",
+      "make-ten-men-feel-like-a-hundred"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "K-2SO, Outspoken Enforcer",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Droid",
+      "Rebel Alliance",
+      "Spy"
+    ],
+    "image": "/media/n1qly0vf/shatterpoint-k2so-outspoken-enforcer-character.png?cc=0.3488827480762965,0.0354796958506932,0.3480869488934005,0.7621628396883364&width=120&height=120&v=1db8e8907dcb490",
+    "abilityIds": [
+      "why-does-she-get-a-blaster-and-i-dont",
+      "congratulations-you-are-being-rescued",
+      "goodbye",
+      "lockdown"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Rebel Pathfinders",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scout",
+      "Spy",
+      "Trooper"
+    ],
+    "image": "/media/onipajlx/shatterpoint-rebel-pathfinders-character.png?cc=0.16666666666666666,0.11363636363636363,0.3787878787878788,0.5833333333333334&width=120&height=120&v=1db8e89e6c70cf0",
+    "abilityIds": [
+      "defensive-maneuver",
+      "cloak-and-dagger",
+      "camouflage",
+      "pathfinders"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Death Trooper Specialist",
+    "type": "Secondary",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Death Trooper",
+      "Galactic Empire",
+      "Stormtrooper"
+    ],
+    "image": "/media/u4zlmt2f/shatterpoint-death-trooper-specialist.png?cc=0.35294117647058826,0.08296436854311617,0.3529411764705883,0.7209572000843348&width=120&height=120&v=1db8f82257cfbf0",
+    "abilityIds": [
+      "oppression",
+      "imperial-brutality",
+      "unrelenting-assault",
+      "elite-conditioning"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Death Troopers",
+    "type": "Support",
+    "points": -4,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Reign of the Empire",
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Death Trooper",
+      "Galactic Empire",
+      "Stormtrooper",
+      "Trooper"
+    ],
+    "image": "/media/lftptmv2/shatterpoint-death-troopers.png?cc=0.6415229885057471,0.13936781609195403,0.013649425287356323,0.6307471264367817&width=120&height=120&v=1db91b391dcc5e0",
+    "abilityIds": [
+      "tactical-advance",
+      "supporting-fire",
+      "elite-training",
+      "protective-detail"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "First Contact",
+    "type": null,
+    "points": 0,
+    "force": 0,
+    "stamina": 0,
+    "durability": 0,
+    "eras": [],
+    "keywords": [],
+    "image": "/media/geznb2sk/shatterpoint-first-contact.webp?width=120&height=120&v=1dbc89fd9a29df0",
+    "abilityIds": [],
+    "stanceIds": []
+  },
+  {
+    "name": "Jyn Erso, Stardust",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spy"
+    ],
+    "image": "/media/bwfnamwq/shatterpoint-jyn-erso-stardust-unit.png?cc=0.3568042662453091,0.04599563865369824,0.346928698400158,0.7568888187857709&width=120&height=120&v=1dbe6db530626e0",
+    "abilityIds": [
+      "this-is-a-rebellion-isnt-it",
+      "reckless-aggressive-and-undisciplined",
+      "i-rebel",
+      "the-time-to-fight-is-now"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Bodhi Rook",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel",
+      "Spy"
+    ],
+    "image": "/media/cjpfe2xk/shatterpoint-boohi-rook-unit.png?cc=0.34319845969835755,0.05303746983784322,0.3504915545961084,0.7427558730251341&width=120&height=120&v=1dbe6dc11991400",
+    "abilityIds": [
+      "rogue-one-pulling-away",
+      "i-just-need-an-open-line",
+      "galen-said-i-could-get-right-by-myself-if-i-was-brave-enough"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Baze Malbus and Chirrut Imwe",
+    "type": "Support",
+    "points": -5,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War"
+    ],
+    "keywords": [
+      "Rebel Alliance",
+      "Scoundrel"
+    ],
+    "image": "/media/v0fn45xz/shatterpoint-baze-malbus-and-chirrut-imwe-unit.png?cc=0.4246987951807229,0.2727753117734094,0.09971464806594799,0.41016698372437116&width=120&height=120&v=1dbe6dcf29869b0",
+    "abilityIds": [
+      "i-fear-nothing-for-all-is-as-the-force-wills-it",
+      "weve-been-in-worse-cages-than-this-one",
+      "guardians-of-the-whills",
+      "hes-praying-for-the-door-to-open"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Nossor Ri",
+    "type": "Secondary",
+    "points": -3,
+    "force": 0,
+    "stamina": 7,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Aquatic",
+      "Scoundrel",
+      "Separatist Alliance"
+    ],
+    "image": "/media/kldgejfv/shatterpoint-nossor-ri-unit-card.png?width=120&height=120&v=1dbf5c89e09d370",
+    "abilityIds": [
+      "scatter",
+      "riptide",
+      "opportunistic-unsurper"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Riff Tamson",
+    "type": "Primary",
+    "points": 8,
+    "force": 2,
+    "stamina": 9,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Aquatic",
+      "Scoundrel",
+      "Separatist Alliance"
+    ],
+    "image": "/media/k3lppxox/shatterpoint-riff-tamson-unit-card.png?width=120&height=120&v=1dbf5c89e031cb0",
+    "abilityIds": [
+      "death-from-below",
+      "hit-and-run",
+      "blood-in-the-water",
+      "theres-plenty-of-suffering-to-go-around"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Aqua Droids",
+    "type": "Support",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Aquatic",
+      "Battle Droid",
+      "Droid",
+      "Separatist Alliance",
+      "Trooper"
+    ],
+    "image": "/media/hjjah2sy/shatterpoint-aqua-droid-unit-card.png?width=120&height=120&v=1dbf5c89e14f700",
+    "abilityIds": [
+      "calculated-advance",
+      "submerge",
+      "augmented-power-servos",
+      "enhanced-blast-armor",
+      "sonar-detection"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "RC-1138 \"Boss\"",
+    "type": "Primary",
+    "points": 9,
+    "force": 2,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Commando",
+      "Clone Trooper",
+      "Delta Squad",
+      "Galactic Republic"
+    ],
+    "image": "/media/cgapiphb/shatterpoint-rc1338-boss-unit-card.png?width=120&height=120&v=1dbf5c89dfc8d00",
+    "abilityIds": [
+      "hang-tight-trooper-delta-squad-on-our-way",
+      "delta-give-me-an-explosive-solution",
+      "lets-get-in-there-and-start-breaking-things",
+      "you-need-to-learn-im-a-lot-scarier-than-you-are"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "RC-1140 \"Fixer\"",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Commando",
+      "Clone Trooper",
+      "Delta Squad",
+      "Galactic Republic"
+    ],
+    "image": "/media/c5lf01ru/shatterpoint-rc1140-fixer-unit-card.png?width=120&height=120&v=1dbf5c89df67280",
+    "abilityIds": [
+      "grab-yourself-some-bacta-trooper",
+      "forming-up-sir",
+      "string-em-along-and-well-mop-em-up",
+      "watch-the-master-at-work"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "\"Sev\" and \"Scorch\"",
+    "type": "Support",
+    "points": -5,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Clone Wars"
+    ],
+    "keywords": [
+      "Clone Commando",
+      "Clone Trooper",
+      "Delta Squad",
+      "Galactic Republic"
+    ],
+    "image": "/media/gfhlup4e/shatterpoint-sev-and-scorch-unit-card.png?width=120&height=120&v=1dbf5c73baecc90",
+    "abilityIds": [
+      "point-me-at-the-enemy-and-stay-out-of-my-way",
+      "yes-more-explosives",
+      "rule-17-always-make-sure-theyre-dead",
+      "i-love-my-job"
+    ],
+    "stanceIds": []
+  }
+]
