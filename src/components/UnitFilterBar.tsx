@@ -81,13 +81,26 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Search Input */}
         <div className="relative flex-1 group">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-emerald-500 transition-colors" />
+          {!filters.search && (
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-emerald-500 transition-colors pointer-events-none" />
+          )}
           <Input
             placeholder="SEARCH UNIT REGISTRY..."
             value={filters.search || ""}
             onChange={handleSearchChange}
-            className="pl-10 bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus-visible:ring-emerald-500/50 min-w-[200px]"
+            className={cn(
+              "bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus-visible:ring-emerald-500/50 min-w-[200px] transition-all",
+              !filters.search ? "pl-10" : "pl-3 pr-10"
+            )}
           />
+          {filters.search && (
+            <button
+              onClick={() => onFilterChange({ ...filters, search: undefined })}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-emerald-500 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
         </div>
 
         {/* Type Filter */}
