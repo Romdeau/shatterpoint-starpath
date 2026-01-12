@@ -24,7 +24,7 @@ import App from "./App";
 import { SquadProvider } from "./context/SquadContext";
 import { ThemeProvider } from "./context/ThemeContext";
 
-describe("App Disclaimer", () => {
+describe("App", () => {
   test("contains the community tool disclaimer", () => {
     render(
         <ThemeProvider>
