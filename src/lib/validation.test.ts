@@ -1,7 +1,7 @@
 import { describe, it, expect } from "bun:test";
 import { validateSquad, validateStrikeTeam } from "./validation";
-import { Squad } from "../context/SquadContext";
-import { Unit } from "../types/unit";
+import type { Squad } from "../context/SquadContext";
+import type { Unit } from "../types/unit";
 
 const mockPrimary: Unit = {
   name: "General Kenobi",

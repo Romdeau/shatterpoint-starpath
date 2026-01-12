@@ -1,5 +1,5 @@
 import { Squad } from "../context/SquadContext";
-import { Unit } from "../types/unit";
+import type { Unit } from "../types/unit";
 
 export interface ValidationResult {
   valid: boolean;

@@ -1,7 +1,7 @@
 import { describe, it, expect } from "bun:test";
 import { exportSquadToBase64, importSquadFromBase64 } from "./sharing";
-import { Squad } from "../context/SquadContext";
-import { Unit } from "../types/unit";
+import type { Squad } from "../context/SquadContext";
+import type { Unit } from "../types/unit";
 
 const mockUnit: Unit = {
   name: "Test Unit",

@@ -2,7 +2,7 @@ import { describe, it, expect } from "bun:test";
 import { JSDOM } from "jsdom";
 import { renderHook, act } from "@testing-library/react";
 import { SquadProvider, useSquad } from "./SquadContext";
-import { Unit } from "../types/unit";
+import type { Unit } from "../types/unit";
 
 const dom = new JSDOM("<!doctype html><html><body></body></html>");
 global.document = dom.window.document;

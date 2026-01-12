@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { Unit } from '../types/unit';
+import type { Unit } from '../types/unit';
 
 export interface Squad {
   id: string;
