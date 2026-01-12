@@ -3,8 +3,8 @@
 ## Phase 1: Data Ingestion Pipeline
 - [x] Task: Create a script skeleton in `scripts/scrape.ts` and update `package.json`. (01ac036)
 - [x] Task: Write unit tests for the data transformation logic (mapping TA format to Starpath schema). (396d6d3)
-- [ ] Task: Implement fetching logic to retrieve raw unit data from Tabletop Admiral.
-- [ ] Task: Implement and refine transformation logic to populate `src/data/units.json`, `abilities.json`, and `stances.json`.
+- [x] Task: Implement fetching logic to retrieve raw unit data from Tabletop Admiral. (completed via scripts/scrape.ts)
+- [x] Task: Implement and refine transformation logic to populate `src/data/units.json` and `abilities.json`. (Stances skipped for now due to lack of source)
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Data Ingestion Pipeline' (Protocol in workflow.md)
 
 ## Phase 2: Search & Filter Logic

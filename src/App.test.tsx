@@ -22,15 +22,18 @@ global.localStorage = {
 import { render, within } from "@testing-library/react";
 import App from "./App";
 import { SquadProvider } from "./context/SquadContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 describe("App Disclaimer", () => {
   test("contains the community tool disclaimer", () => {
     render(
-        <SquadProvider>
-            <App />
-        </SquadProvider>
+        <ThemeProvider>
+            <SquadProvider>
+                <App />
+            </SquadProvider>
+        </ThemeProvider>
     );
-    const disclaimer = within(document.body).getByText(/Community tool. Not affiliated with Atomic Mass Games./i);
+    const disclaimer = within(document.body).getByText(/Community tool \/\/ Not affiliated with Atomic Mass Games/i);
     expect(disclaimer).not.toBeNull();
   });
 });
