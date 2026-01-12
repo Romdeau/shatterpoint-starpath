@@ -32,7 +32,7 @@ export const UnitListPage = () => {
           <span className="text-[9px] font-aurebesh text-emerald-500/40 uppercase">active manifest</span>
         </div>
 
-        <div className="flex-1 max-w-2xl ml-0 md:ml-8">
+        <div className="flex-1 ml-0 md:ml-8">
           <UnitFilterBar
             filters={filters}
             onFilterChange={setFilters}

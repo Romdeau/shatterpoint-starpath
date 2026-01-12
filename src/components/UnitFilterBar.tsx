@@ -78,7 +78,7 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
         <span className="text-[8px] font-aurebesh text-zinc-800 uppercase tracking-tighter">filter unit manifest</span>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col lg:flex-row gap-4">
         {/* Search Input */}
         <div className="relative flex-1 group">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-emerald-500 transition-colors" />
@@ -86,7 +86,7 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
             placeholder="SEARCH UNIT REGISTRY..."
             value={filters.search || ""}
             onChange={handleSearchChange}
-            className="pl-10 bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus-visible:ring-emerald-500/50"
+            className="pl-10 bg-zinc-900/50 border-zinc-800 text-[10px] font-mono tracking-widest uppercase focus-visible:ring-emerald-500/50 min-w-[200px]"
           />
         </div>
 
@@ -113,8 +113,11 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
             </SelectTrigger>
             <SelectContent className="bg-zinc-950 border-zinc-800 text-zinc-100 font-mono">
               <SelectItem value="all" className="text-[10px] uppercase">All Eras</SelectItem>
+              <SelectItem value="The High Republic" className="text-[10px] uppercase">The High Republic</SelectItem>
               <SelectItem value="Clone Wars" className="text-[10px] uppercase">Clone Wars</SelectItem>
+              <SelectItem value="Reign of the Empire" className="text-[10px] uppercase">Reign of the Empire</SelectItem>
               <SelectItem value="Galactic Civil War" className="text-[10px] uppercase">Galactic Civil War</SelectItem>
+              <SelectItem value="The New Republic" className="text-[10px] uppercase">The New Republic</SelectItem>
             </SelectContent>
           </Select>
         </div>
