@@ -18,8 +18,8 @@
 - [x] Task: Implement base64 export and import functionality. (5f2e479)
 - [x] Task: Conductor - User Manual Verification 'Phase 3: List Builder Logic' (Protocol in workflow.md) (5bb8aea)
 
-## Phase 4: Persistence & Polishing
+## Phase 4: Persistence & Polishing [checkpoint: 84c70fa]
 - [x] Task: Implement LocalStorage persistence for saved squads. (86f7f5b)
 - [x] Task: Apply the "Andor" aesthetic (Galactic & Industrial) to the UI. (1db28e0)
 - [x] Task: Ensure the "Community tool" disclaimer is present on all pages. (0d0a8a8)
-- [~] Task: Conductor - User Manual Verification 'Phase 4: Persistence & Polishing' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 4: Persistence & Polishing' (Protocol in workflow.md) (9ab73cd)
