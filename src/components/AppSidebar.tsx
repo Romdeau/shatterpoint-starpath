@@ -8,6 +8,7 @@ import {
   MoreHorizontal,
   ChevronUp,
   User2,
+  PanelLeft,
 } from "lucide-react"
 
 import {
@@ -22,6 +23,7 @@ import {
   SidebarGroup,
   SidebarGroupLabel,
   SidebarGroupContent,
+  useSidebar,
 } from "@/components/ui/sidebar"
 import {
   DropdownMenu,
@@ -53,6 +55,7 @@ const navItems = [
 export function AppSidebar() {
   const location = useLocation()
   const { accent } = useTheme()
+  const { toggleSidebar } = useSidebar()
 
   const logoFilter = {
     emerald: 'sepia(1) saturate(5) hue-rotate(90deg)',
@@ -147,12 +150,20 @@ export function AppSidebar() {
             </DropdownMenu>
           </SidebarMenuItem>
         </SidebarMenu>
-        <div className="mt-2 flex justify-center group-data-[collapsible=icon]:hidden">
-          <SidebarTrigger className="w-full text-[8px] font-mono uppercase text-zinc-600 hover:text-emerald-500 py-1 transition-colors" />
-        </div>
-        <div className="hidden group-data-[collapsible=icon]:flex justify-center py-2">
-          <SidebarTrigger className="text-zinc-600 hover:text-emerald-500" />
-        </div>
+        <SidebarMenu className="mt-2">
+          <SidebarMenuItem>
+            <SidebarMenuButton
+              onClick={() => toggleSidebar()}
+              tooltip="Toggle Sidebar"
+              className="text-zinc-600 hover:text-emerald-500 hover:bg-emerald-500/10 transition-colors group-data-[collapsible=icon]:justify-center"
+            >
+              <PanelLeft className="w-4 h-4" />
+              <span className="font-mono text-[10px] uppercase tracking-wider group-data-[collapsible=icon]:hidden">
+                Minimize Interface
+              </span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarFooter>
     </Sidebar>
   )
