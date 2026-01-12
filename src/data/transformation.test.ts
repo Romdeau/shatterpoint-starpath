@@ -2,8 +2,20 @@ import { expect, test } from "bun:test";
 import schema from "./schema.json";
 import { validate } from "jsonschema";
 
+interface ExternalData {
+  name: string;
+  type: string;
+  points: number;
+  force?: number;
+  stamina: number;
+  durability?: number;
+  eras?: string[];
+  tags: string[];
+  abilities?: Array<{ id?: string; name: string; type: string; cost?: number; text: string }>;
+}
+
 // Updated Mock transformation function
-function transform(externalData: any) {
+function transform(externalData: ExternalData) {
   return {
     name: externalData.name,
     type: externalData.type,
@@ -13,7 +25,7 @@ function transform(externalData: any) {
     durability: externalData.durability || 1, // Default if missing
     eras: externalData.eras || [],
     keywords: externalData.tags,
-    abilityIds: (externalData.abilities || []).map((a: any) => a.id || a.name.toLowerCase().replace(/ /g, "-")),
+    abilityIds: (externalData.abilities || []).map((a) => a.id || a.name.toLowerCase().replace(/ /g, "-")),
     stanceIds: [] // Placeholder
   };
 }

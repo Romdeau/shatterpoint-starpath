@@ -1,15 +1,28 @@
 {
   "name": "shatterpoint-starpath",
-  "module": "index.ts",
   "type": "module",
   "private": true,
+
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "bun test"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "jsonschema": "^1.5.0"
+    "jsonschema": "^1.5.0",
+    "react": "19",
+    "react-dom": "19"
   }
 }
