@@ -1,8 +1,9 @@
 import { useState, useMemo } from "react";
 import { UnitList } from "./components/UnitList";
+import { UnitFilterBar } from "./components/UnitFilterBar";
 import unitData from "./data/units.json";
 import type { Unit } from "./types/unit";
-import { filterUnits } from "./lib/filters";
+import { filterUnits, type UnitFilters } from "./lib/filters";
 
 const units = unitData as unknown as Unit[];
 
@@ -12,11 +13,17 @@ import { useTheme } from "./context/ThemeContext";
 
 function App() {
   const { accent, isFlickerEnabled } = useTheme();
-  const [searchTerm, setSearchTerm] = useState("");
+  const [filters, setFilters] = useState<UnitFilters>({});
 
   const filteredUnits = useMemo(() => {
-    return filterUnits(units, { search: searchTerm });
-  }, [searchTerm]);
+    return filterUnits(units, filters);
+  }, [filters]);
+
+  const allKeywords = useMemo(() => {
+    const kws = new Set<string>();
+    units.forEach(u => u.keywords.forEach(k => kws.add(k)));
+    return Array.from(kws).sort();
+  }, []);
 
   const logoFilter = {
     emerald: 'sepia(1) saturate(5) hue-rotate(90deg)',
@@ -77,19 +84,12 @@ function App() {
               <span className="text-[9px] font-aurebesh text-emerald-500/40 uppercase">active manifest</span>
             </div>
             
-            <div className="flex-1 max-w-md ml-0 md:ml-8">
-              <div className="relative group">
-                <input
-                  type="text"
-                  placeholder="SEARCH UNIT REGISTRY..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-zinc-950 border border-zinc-800 p-2 pl-4 text-[10px] font-mono tracking-widest text-zinc-100 focus:outline-none focus:border-emerald-500/50 transition-colors placeholder:text-zinc-700"
-                />
-                <div className="absolute top-0 right-0 p-2 pointer-events-none">
-                  <span className="text-[8px] font-aurebesh text-zinc-800 group-hover:text-emerald-500/40 uppercase">search</span>
-                </div>
-              </div>
+            <div className="flex-1 max-w-2xl ml-0 md:ml-8">
+              <UnitFilterBar 
+                filters={filters} 
+                onFilterChange={setFilters} 
+                availableKeywords={allKeywords}
+              />
             </div>
 
             <div className="h-px flex-1 bg-zinc-900/50 hidden md:block" />

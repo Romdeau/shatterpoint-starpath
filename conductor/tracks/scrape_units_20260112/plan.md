@@ -15,7 +15,7 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Search & Filter Logic' (Protocol in workflow.md)
 
 ## Phase 3: UI Integration & Polishing
-- [ ] Task: Build the Search & Filter bar UI using shadcn/ui components (Input, Select, Multi-select).
+- [~] Task: Build the Search & Filter bar UI using shadcn/ui components (Input, Select, Multi-select).
 - [ ] Task: Integrate the filter bar into `App.tsx` and connect it to the unit state.
 - [ ] Task: Replace hardcoded sample data with the full scraped dataset in `App.tsx`.
 - [ ] Task: Perform a final performance audit of the list rendering and refine the "Andor" aesthetic of the filter bar.
