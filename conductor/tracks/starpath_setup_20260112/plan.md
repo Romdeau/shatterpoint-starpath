@@ -15,8 +15,8 @@
 ## Phase 3: List Builder Logic
 - [x] Task: Implement the squad-building state management using React Context. (800c882)
 - [x] Task: Write validation logic for AMG squad-building rules. (f906385)
-- [~] Task: Implement base64 export and import functionality.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: List Builder Logic' (Protocol in workflow.md)
+- [x] Task: Implement base64 export and import functionality. (5f2e479)
+- [~] Task: Conductor - User Manual Verification 'Phase 3: List Builder Logic' (Protocol in workflow.md)
 
 ## Phase 4: Persistence & Polishing
 - [ ] Task: Implement LocalStorage persistence for saved squads.
