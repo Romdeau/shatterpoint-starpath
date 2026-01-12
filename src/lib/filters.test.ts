@@ -78,4 +78,11 @@ describe("Filter Utility", () => {
     expect(result).toHaveLength(1);
     expect(result[0]!.name).toBe("General Anakin Skywalker");
   });
+
+  it("should filter by points", () => {
+    const filters: UnitFilters = { points: 4 };
+    const result = filterUnits(mockUnits, filters);
+    expect(result).toHaveLength(1);
+    expect(result[0]!.name).toBe("Captain Rex");
+  });
 });

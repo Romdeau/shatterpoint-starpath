@@ -5,6 +5,7 @@ export interface UnitFilters {
   type?: UnitType;
   keywords?: string[];
   era?: string;
+  points?: number;
 }
 
 /**
@@ -37,6 +38,11 @@ export function filterUnits(units: Unit[], filters: UnitFilters): Unit[] {
 
     // Era filter
     if (filters.era && !unit.eras.includes(filters.era)) {
+      return false;
+    }
+
+    // Points filter
+    if (filters.points !== undefined && unit.points !== filters.points) {
       return false;
     }
 
