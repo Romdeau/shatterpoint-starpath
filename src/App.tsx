@@ -1,30 +1,11 @@
+import { useState, useMemo } from "react";
 import { UnitList } from "./components/UnitList";
-import sampleUnit from "./data/sample_unit.json";
+import { UnitFilterBar } from "./components/UnitFilterBar";
+import unitData from "./data/units.json";
 import type { Unit } from "./types/unit";
+import { filterUnits, type UnitFilters } from "./lib/filters";
 
-// Prepare sample data for the display
-const units: Unit[] = [
-  sampleUnit as unknown as Unit,
-  {
-    ...sampleUnit,
-    name: "General Anakin Skywalker",
-    points: 7,
-    type: "Primary",
-    stamina: 10,
-    durability: 3,
-    force: 4,
-    keywords: ["Jedi", "501st", "Galactic Republic"]
-  } as unknown as Unit,
-  {
-    ...sampleUnit,
-    name: "Captain Rex",
-    points: 4,
-    type: "Secondary",
-    stamina: 9,
-    durability: 2,
-    keywords: ["501st", "Clone Trooper", "Galactic Republic"]
-  } as unknown as Unit
-];
+const units = unitData as unknown as Unit[];
 
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
@@ -32,6 +13,17 @@ import { useTheme } from "./context/ThemeContext";
 
 function App() {
   const { accent, isFlickerEnabled } = useTheme();
+  const [filters, setFilters] = useState<UnitFilters>({});
+
+  const filteredUnits = useMemo(() => {
+    return filterUnits(units, filters);
+  }, [filters]);
+
+  const allKeywords = useMemo(() => {
+    const kws = new Set<string>();
+    units.forEach(u => u.keywords.forEach(k => kws.add(k)));
+    return Array.from(kws).sort();
+  }, []);
 
   const logoFilter = {
     emerald: 'sepia(1) saturate(5) hue-rotate(90deg)',
@@ -84,21 +76,30 @@ function App() {
         <div className="absolute -left-6 top-0 bottom-0 w-px bg-zinc-800/50 hidden md:block" />
 
         <section className="mb-12">
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-8">
             <div className="flex flex-col">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-zinc-400">
                 Authorized Personnel Only
               </h2>
               <span className="text-[9px] font-aurebesh text-emerald-500/40 uppercase">active manifest</span>
             </div>
-            <div className="h-px flex-1 bg-zinc-900/50" />
+            
+            <div className="flex-1 max-w-2xl ml-0 md:ml-8">
+              <UnitFilterBar 
+                filters={filters} 
+                onFilterChange={setFilters} 
+                availableKeywords={allKeywords}
+              />
+            </div>
+
+            <div className="h-px flex-1 bg-zinc-900/50 hidden md:block" />
             <div className="flex flex-col items-end">
               <span className="text-[10px] font-mono text-zinc-700">ORD_03.manifest</span>
               <span className="text-[8px] font-mono text-zinc-800 uppercase tracking-tighter">Clearance Level: Delta-9</span>
             </div>
           </div>
 
-          <UnitList units={units} />
+          <UnitList units={filteredUnits} />
         </section>
 
         {/* Tactical Info Panel */}
