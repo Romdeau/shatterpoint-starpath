@@ -1,0 +1,34 @@
+{
+  "name": "Lord Maul",
+  "type": "Primary",
+  "points": 8,
+  "force": 3,
+  "health": 11,
+  "keywords": ["Dathomirian", "Force User", "Sith", "Shadow Collective"],
+  "abilities": [
+    {
+      "name": "Force Speed",
+      "type": "Active",
+      "cost": 1,
+      "description": "Each character in this unit may Dash."
+    },
+    {
+      "name": "There is No Place to Run",
+      "type": "Active",
+      "cost": 2,
+      "description": "Choose an enemy character within Range 3. Pull that character Range 2 toward this character. Then this character may make a 5 dice melee attack targeting that character."
+    },
+    {
+      "name": "Sustained by Rage",
+      "type": "Innate",
+      "cost": 0,
+      "description": "While this unit is wounded, it has +2 dice to its melee attacks."
+    },
+    {
+      "name": "Die, Jedi, Die",
+      "type": "Identity",
+      "cost": 0,
+      "description": "When an enemy Primary Unit or enemy Secondary Unit is Wounded by an attack made by this unit, this unit may Heal 3 or Refresh 2 Force."
+    }
+  ]
+}

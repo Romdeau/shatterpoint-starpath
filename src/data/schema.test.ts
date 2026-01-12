@@ -2,16 +2,9 @@ import { expect, test } from "bun:test";
 import schema from "./schema.json";
 import { validate } from "jsonschema"; // I'll need to install this or use a similar approach
 
-const sampleUnit = {
-  name: "Kalani, Super Tactical Droid",
-  type: "Primary",
-  points: 4,
-  health: 10,
-  keywords: ["Droid", "Separatist"],
-  abilities: []
-};
+import sampleUnitFile from "./sample_unit.json";
 
-test("sample unit matches schema", () => {
-  const result = validate(sampleUnit, schema);
+test("sample_unit.json matches schema", () => {
+  const result = validate(sampleUnitFile, schema);
   expect(result.valid).toBe(true);
 });
