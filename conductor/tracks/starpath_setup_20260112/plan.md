@@ -2,7 +2,7 @@
 
 ## Phase 1: Data Architecture
 - [x] Task: Define the core JSON schema for Shatterpoint units in `src/data/schema.json`. (44b4ffd)
-- [ ] Task: Create a sample unit file `src/data/sample_unit.json` to validate the schema.
+- [x] Task: Create a sample unit file `src/data/sample_unit.json` to validate the schema. (a76e93c)
 - [ ] Task: Develop a data mapping strategy from external sources to our internal schema.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Data Architecture' (Protocol in workflow.md)
 
