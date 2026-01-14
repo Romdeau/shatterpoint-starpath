@@ -31,6 +31,12 @@ export interface Unit {
   durability: number;
   eras: string[];
   keywords: string[];
+  image: string;
   abilityIds: string[];
   stanceIds: string[];
+}
+
+export interface Mission {
+  name: string;
+  image: string;
 }

@@ -15,6 +15,7 @@ describe("Filter Utility", () => {
       keywords: ["Jedi", "501st", "Galactic Republic"],
       abilityIds: [],
       stanceIds: [],
+      image: "placeholder",
     },
     {
       name: "Captain Rex",
@@ -26,6 +27,7 @@ describe("Filter Utility", () => {
       keywords: ["501st", "Clone Trooper", "Galactic Republic"],
       abilityIds: [],
       stanceIds: [],
+      image: "placeholder",
     },
     {
       name: "B1 Battle Droids",
@@ -37,6 +39,7 @@ describe("Filter Utility", () => {
       keywords: ["Droid", "Separatist Alliance"],
       abilityIds: [],
       stanceIds: [],
+      image: "placeholder",
     },
   ];
 

@@ -4,42 +4,45 @@ import type { Squad } from "../context/SquadContext";
 import type { Unit } from "../types/unit";
 
 const mockPrimary: Unit = {
-  name: "General Kenobi",
-  type: "Primary",
-  points: 8, // SP Allowance
-  force: 4,
-  stamina: 10,
-  durability: 3,
-  eras: ["Clone Wars"],
-  keywords: ["Jedi", "Galactic Republic"],
-  abilityIds: [],
-  stanceIds: [],
+    name: "General Kenobi",
+    type: "Primary",
+    points: 8, // SP Allowance
+    force: 4,
+    stamina: 10,
+    durability: 3,
+    eras: ["Clone Wars"],
+    keywords: ["Jedi", "Galactic Republic"],
+    abilityIds: [],
+    stanceIds: [],
+    image: "placeholder",
 };
 
 const mockSecondary: Unit = {
-  name: "Clone Commander Cody",
-  type: "Secondary",
-  points: 4, // Cost
-  force: 0,
-  stamina: 8,
-  durability: 2,
-  eras: ["Clone Wars"],
-  keywords: ["Clone Trooper", "Galactic Republic"],
-  abilityIds: [],
-  stanceIds: [],
+    name: "Clone Commander Cody",
+    type: "Secondary",
+    points: 4, // Cost
+    force: 0,
+    stamina: 8,
+    durability: 2,
+    eras: ["Clone Wars"],
+    keywords: ["Clone Trooper", "Galactic Republic"],
+    abilityIds: [],
+    stanceIds: [],
+    image: "placeholder",
 };
 
 const mockSupport: Unit = {
-  name: "212th Clone Troopers",
-  type: "Support",
-  points: 4, // Cost
-  force: 0,
-  stamina: 6,
-  durability: 2,
-  eras: ["Clone Wars"],
-  keywords: ["Clone Trooper", "Galactic Republic"],
-  abilityIds: [],
-  stanceIds: [],
+    name: "212th Clone Troopers",
+    type: "Support",
+    points: 4, // Cost
+    force: 0,
+    stamina: 6,
+    durability: 2,
+    eras: ["Clone Wars"],
+    keywords: ["Clone Trooper", "Galactic Republic"],
+    abilityIds: [],
+    stanceIds: [],
+    image: "placeholder",
 };
 
 const mockSupportExpensive: Unit = {
@@ -92,7 +95,7 @@ describe("Validation Logic", () => {
             // Two squads with same Primary
             const squad1 = { ...mockSquad, id: "1" };
             const squad2 = { ...mockSquad, id: "2" }; // Same unit objects = same names
-            
+
             const result = validateStrikeTeam([squad1, squad2]);
             expect(result.valid).toBe(false);
             expect(result.errors).toContain("Duplicate unique unit: General Kenobi");

@@ -110,7 +110,7 @@ function App() {
                 </div>
                 <div className="flex flex-col gap-2 p-4 border border-zinc-900 bg-emerald-950/5 relative overflow-hidden group justify-center">
                   <p className="text-[8px] text-zinc-600 font-mono text-center uppercase tracking-widest leading-relaxed">
-                    Starpath v2.0 // Community Tool // Not affiliated with AMG
+                    Starpath v2.0 // Community Tool // Not affiliated with Atomic Mass Games
                   </p>
                 </div>
               </section>

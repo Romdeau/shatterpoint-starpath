@@ -7,7 +7,11 @@
       "type": "string"
     },
     "type": {
-      "enum": ["Primary", "Secondary", "Support"]
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Support"
+      ]
     },
     "points": {
       "type": "integer"
@@ -33,6 +37,9 @@
         "type": "string"
       }
     },
+    "image": {
+      "type": "string"
+    },
     "abilityIds": {
       "type": "array",
       "items": {
@@ -46,5 +53,15 @@
       }
     }
   },
-  "required": ["name", "type", "points", "stamina", "durability", "eras", "keywords", "abilityIds"]
+  "required": [
+    "name",
+    "type",
+    "points",
+    "stamina",
+    "durability",
+    "eras",
+    "keywords",
+    "image",
+    "abilityIds"
+  ]
 }
