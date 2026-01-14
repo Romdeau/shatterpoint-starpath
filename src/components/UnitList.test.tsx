@@ -29,6 +29,7 @@ describe("UnitList", () => {
         keywords: ["Jedi"],
         abilityIds: [],
         stanceIds: [],
+        image: "placeholder",
       }
     ];
     render(<UnitList units={mockUnits} />);

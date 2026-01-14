@@ -19,7 +19,8 @@ const mockUnit: Unit = {
   eras: ["Clone Wars"],
   keywords: ["Sith"],
   abilityIds: [],
-  stanceIds: []
+  stanceIds: [],
+  image: "placeholder"
 };
 
 describe("UnitCard Aesthetic", () => {

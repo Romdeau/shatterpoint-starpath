@@ -2731,97 +2731,6 @@
     "stanceIds": []
   },
   {
-    "name": "Shifting Priorities",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/ruyd53z5/shatterpoint-shifting-priorities.png?width=120&height=120&v=1db613fe67edfb0",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
-    "name": "Sabotage Showdown",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/obzmcokx/sabotage-showdown.png?width=120&height=120&v=1db62b601b15390",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
-    "name": "Never Tell Me The Odds",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/wt1ft2p2/never-tell-me-the-odds.png?width=120&height=120&v=1db62b8d33a9d20",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
-    "name": "Ewok Traps",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/ylzbemev/01092024_transmission-image_4-2.png?width=120&height=120&v=1da433ab7828780",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
-    "name": "I Expect Results, Not Perfection",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/1gvf2pdf/shatterpoint-i-expect-results-not-perfection.png?width=120&height=120&v=1db64d3770847b0",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
-    "name": "Sometimes Brutality Serves a Purpose",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/2oebxm0r/shatterpoint-sometimes-brutality-serves-a-purpose.png?width=120&height=120&v=1db64d377011bc0",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
-    "name": "Turn Their Strength Against Them",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/s1sejv1m/shatterpoint-turn-their-strength-against-them.png?width=120&height=120&v=1db64d376f16450",
-    "abilityIds": [],
-    "stanceIds": []
-  },
-  {
     "name": "Jedi Master Kit Fisto",
     "type": "Primary",
     "points": 8,
@@ -3142,19 +3051,6 @@
       "elite-training",
       "protective-detail"
     ],
-    "stanceIds": []
-  },
-  {
-    "name": "First Contact",
-    "type": null,
-    "points": 0,
-    "force": 0,
-    "stamina": 0,
-    "durability": 0,
-    "eras": [],
-    "keywords": [],
-    "image": "/media/geznb2sk/shatterpoint-first-contact.webp?width=120&height=120&v=1dbc89fd9a29df0",
-    "abilityIds": [],
     "stanceIds": []
   },
   {

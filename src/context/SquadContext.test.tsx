@@ -32,6 +32,7 @@ const mockPrimary: Unit = {
     keywords: ["Jedi"],
     abilityIds: [],
     stanceIds: [],
+    image: "placeholder",
 };
 
 // Setup JSDOM for this test file since bun test doesn't auto-inject it

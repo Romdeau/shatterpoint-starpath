@@ -26,6 +26,7 @@ function transform(externalData: ExternalData) {
     eras: externalData.eras || [],
     keywords: externalData.tags,
     abilityIds: (externalData.abilities || []).map((a) => a.id || a.name.toLowerCase().replace(/ /g, "-")),
+    image: "placeholder",
     stanceIds: [] // Placeholder
   };
 }

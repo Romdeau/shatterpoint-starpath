@@ -5,8 +5,16 @@
   "force": 3,
   "stamina": 11,
   "durability": 2,
-  "eras": ["Clone Wars"],
-  "keywords": ["Dathomirian", "Force User", "Sith", "Shadow Collective"],
+  "eras": [
+    "Clone Wars"
+  ],
+  "keywords": [
+    "Dathomirian",
+    "Force User",
+    "Sith",
+    "Shadow Collective"
+  ],
+  "image": "placeholder.png",
   "abilityIds": [
     "force-speed",
     "there-is-no-place-to-run",

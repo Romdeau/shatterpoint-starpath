@@ -4,16 +4,17 @@ import type { Squad } from "../context/SquadContext";
 import type { Unit } from "../types/unit";
 
 const mockUnit: Unit = {
-  name: "Test Unit",
-  type: "Primary",
-  points: 8,
-  force: 0,
-  stamina: 0,
-  durability: 0,
-  eras: [],
-  keywords: [],
-  abilityIds: [],
-  stanceIds: [],
+    name: "Test Unit",
+    type: "Primary",
+    points: 8,
+    force: 0,
+    stamina: 0,
+    durability: 0,
+    eras: [],
+    keywords: [],
+    abilityIds: [],
+    stanceIds: [],
+    image: "placeholder",
 };
 
 const mockSquad: Squad = {

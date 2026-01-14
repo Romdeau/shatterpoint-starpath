@@ -39,6 +39,7 @@ export function transformUnit(ext: ExternalUnit): Unit {
     durability: ext.durability,
     eras: ext.eras ?? [],
     keywords: ext.tags,
+    image: "placeholder", // Default placeholder for transformed units until valid image source is mapped
     abilityIds: ext.abilities.map((a) => a.name.toLowerCase().replace(/ /g, "-")),
     stanceIds: [], // To be implemented later
   };
