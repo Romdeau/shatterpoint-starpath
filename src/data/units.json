@@ -3321,5 +3321,78 @@
       "impatience"
     ],
     "stanceIds": []
+  },
+  {
+    "name": "Morgan Elsbeth (guess)",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Force User",
+      "Galactic Empire",
+      "Nightsister"
+    ],
+    "image": "morgan-elsbeth-card.jpg",
+    "abilityIds": [
+      "fate-has-decided-our-next-move",
+      "manipulating-hand",
+      "you-will-die-here-alone",
+      "my-loyalty-my-life-for-the-sisterhood"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Enoch, Captain of the Guard (guess)",
+    "type": "Secondary",
+    "points": 4,
+    "force": 0,
+    "stamina": 9,
+    "durability": 2,
+    "eras": [
+      "The New Republic"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Night Trooper",
+      "Stormtrooper"
+    ],
+    "image": "enoch-captain-of-the-guard-card.jpg",
+    "abilityIds": [
+      "by-your-command-grand-admiral",
+      "coordinated-fire-strained",
+      "die-well"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Night Troopers (guess)",
+    "type": "Support",
+    "points": 4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "The New Republic"
+    ],
+    "keywords": [
+      "Galactic Empire",
+      "Night Trooper",
+      "Stormtrooper",
+      "Trooper"
+    ],
+    "image": "night-troopers-card.jpg",
+    "abilityIds": [
+      "dark-innervation",
+      "unnatural-vigor",
+      "animated-beyond-death",
+      "undying-loyalty"
+    ],
+    "stanceIds": []
   }
 ]
