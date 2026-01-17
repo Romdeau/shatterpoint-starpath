@@ -3271,5 +3271,55 @@
       "i-love-my-job"
     ],
     "stanceIds": []
+  },
+  {
+    "name": "Baylan Skoll (guess)",
+    "type": "Primary",
+    "points": 8,
+    "force": 3,
+    "stamina": 10,
+    "durability": 3,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Force User",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "",
+    "abilityIds": [
+      "power-such-as-youve-never-dreamed",
+      "force-enhanced-dexterity",
+      "impatience-for-victory-will-guarantee-defeat",
+      "one-must-destroy-in-order-to-create"
+    ],
+    "stanceIds": []
+  },
+  {
+    "name": "Shin Hati, Eager Apprentice (guess)",
+    "type": "Secondary",
+    "points": -4,
+    "force": 0,
+    "stamina": 8,
+    "durability": 2,
+    "eras": [
+      "Galactic Civil War",
+      "The New Republic"
+    ],
+    "keywords": [
+      "Force User",
+      "Mercenary",
+      "Scoundrel"
+    ],
+    "image": "",
+    "abilityIds": [
+      "furious-rush",
+      "trained-to-be-something-more",
+      "riposte",
+      "impatience"
+    ],
+    "stanceIds": []
   }
 ]

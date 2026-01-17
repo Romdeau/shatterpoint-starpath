@@ -2980,5 +2980,61 @@
     "type": "Innate",
     "cost": 0,
     "description": "While a character in this Unit is contesting one or more Active objecties, it has Protection and Steadfast."
+  },
+  {
+    "id": "power-such-as-youve-never-dreamed",
+    "name": "Power. Such as You've Never Dreamed",
+    "type": "Active",
+    "cost": 2,
+    "description": "Choose a character in this Unit and an enemy character within Range 3 of that character. Pull the chosen enemy character Range 2 Toward the chosen allied character. Then this Unit gains [hunker]."
+  },
+  {
+    "id": "force-enhanced-dexterity",
+    "name": "Force-Enhanced Dexterity",
+    "type": "Active",
+    "cost": 1,
+    "description": "Each character in this Unit may [dash]. If any characters [dash], this Unit gains [hunker]. This Unit may use this ability two times during its activation instead of the normal one."
+  },
+  {
+    "id": "impatience-for-victory-will-guarantee-defeat",
+    "name": "Impatience for Victory Will Guarantee Defeat",
+    "type": "Innate",
+    "cost": 0,
+    "description": "At the start of another allied Unit's activation, when it would remove its [hunker], it may choose not to. If it chooses not to remove its [hunker], at the end of that Unit's activation, it removes all its [hunker].\nAdditionally, after Setup and each time an opposing player claims a Struggle Card, each allied Unit gains [hunker]."
+  },
+  {
+    "id": "one-must-destroy-in-order-to-create",
+    "name": "One Must Destroy in Order to Create",
+    "type": "Identity",
+    "cost": 0,
+    "description": "Allied Units do not lose their [hunker] when characters in them become Engaged and can gain and have [hunker] while they have Engaged characters. When a character in an allied Unit makes an attack, during the Modify Dice Step, it may remove one or more of its [hunker]. If it does, add [hit] to the attack roll for each [hunker] it removed."
+  },
+  {
+    "id": "furious-rush",
+    "name": "Furious Rush",
+    "type": "Active",
+    "cost": 1,
+    "description": "One character in this Unit may [dash]. Then choose an enemy character Engaged with one or more characters in this Unit. The chosen character gains [Exposed]."
+  },
+  {
+    "id": "trained-to-be-something-more",
+    "name": "Trained to be Something More",
+    "type": "Reactive",
+    "cost": 1,
+    "description": "After another allied Force User Unit makes a combat action, this Unit may use this ability.\nOne character in this Unit may [Reposition] or may gain [hunker]. Then that character may make a 5 dice attack targeting one of the same enemy characters within [Range] and LOS."
+  },
+  {
+    "id": "riposte",
+    "name": "Riposte",
+    "type": "Reactive",
+    "cost": 0,
+    "description": "After a [Melee] attack targeting a character in this Unit is resolved, this Unit may use this ability. If the attack roll contained one or more [failure] results, the attacking Unit suffers [damage] [damage]."
+  },
+  {
+    "id": "impatience",
+    "name": "Impatience",
+    "type": "Innate",
+    "cost": 0,
+    "description": "This Unit’s Order Card cannot be placed in reserve. Characters in this Unit have IMMUNITY [[pinned]] and IMMUNITY [[exposed]].\nAdditionally, when this Unit would spend one or more [force] to use an ability, it may remove one or more [hunker] from itself. If it does, reduce the cost of that ability by [force] for each [hunker] removed."
   }
 ]
