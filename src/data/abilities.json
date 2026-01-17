@@ -3036,5 +3036,82 @@
     "type": "Innate",
     "cost": 0,
     "description": "This Unit’s Order Card cannot be placed in reserve. Characters in this Unit have IMMUNITY [[pinned]] and IMMUNITY [[exposed]].\nAdditionally, when this Unit would spend one or more [force] to use an ability, it may remove one or more [hunker] from itself. If it does, reduce the cost of that ability by [force] for each [hunker] removed."
+  },
+  {
+    "id": "fate-has-decided-our-next-move",
+    "name": "Fate Has Decided Our Next Move",
+    "type": "Tactic",
+    "cost": 0,
+    "description": "At the start of this Unit's activation, look at the top card of your Order Deck. Then put that card on the top or bottom of your Order Deck. If you chose to put the card on the top of your Order Deck, each character in this Unit may [dash]. Then this Unit immediately makes a focus action. If you chose to put the card on the bottom of your Order Deck, one character in each allied NIGHTSISTER and NIGHT TROOPER Unit may [reposition]. If you have no cards in your Order Deck, choose which effect to resolve."
+  },
+  {
+    "id": "manipulating-hand",
+    "name": "Manipulating Hand",
+    "type": "Active",
+    "cost": 2,
+    "description": "Choose an enemy character within [range] 4. The chosen character [dash]. You resolve this move."
+  },
+  {
+    "id": "you-will-die-here-alone",
+    "name": "You Will Die Here, Alone",
+    "type": "Innate",
+    "cost": 0,
+    "description": "When a character in this Unit makes a [melee] attack as part of a combat action, if there are no other enemy characters within [range] 2 of the defender, add 3 dice to the attack roll."
+  },
+  {
+    "id": "my-loyalty-my-life-for-the-sisterhood",
+    "name": "My Loyalty, My Life for the Sisterhood",
+    "type": "Identity",
+    "cost": 0,
+    "description": "While this Unit is not Wounded, when an allied Unit within [range] 3 would spend [force] to use an ability, this Unit may suffer [damage] equal to the cost of the ability instead.\nAdditionally, when this Unit becomes Wounded, after the effect is resolved, one character in [snip]"
+  },
+  {
+    "id": "by-your-command-grand-admiral",
+    "name": "By Your Command, Grand Admiral",
+    "type": "Active",
+    "cost": 1,
+    "description": "Choose another allied Stormtrooper character. The chosen character may [dash]. Then, if the chosen character is a Night Trooper, one character in this Unit may [dash]."
+  },
+  {
+    "id": "coordinated-fire-strained",
+    "name": "Coordinated Fire: [strained]",
+    "type": "Reactive",
+    "cost": 0,
+    "description": "When a character in another allied Galactic Empire Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within [range] 5 of a character in this Unit, the target Unit gains [strained]."
+  },
+  {
+    "id": "die-well",
+    "name": "Die Well",
+    "type": "Reactive",
+    "cost": 0,
+    "description": "When a character in this Unit or an allied Stormtrooper Supporting character within [range] 5 makes a [melee] attack as part of a combat action, before dice are rolled, this Unit may use this ability. The attacker and defender each gain [exposed]."
+  },
+  {
+    "id": "dark-innervation",
+    "name": "Dark Innervation",
+    "type": "Active",
+    "cost": 1,
+    "description": "Each character in this Unit may [dash]. If this Unit has one or more Injured tokens, each character in this Unit may instead [advance]."
+  },
+  {
+    "id": "unnatural-vigor",
+    "name": "Unnatural Vigor",
+    "type": "Reactive",
+    "cost": 0,
+    "description": "When a character in this Unit defends, during the Modify Dice Rolls step, this Unit may use this ability. Change one [crit] result in the attack roll to a [failure] result. Then, for each Injured token this Unit has, change one additional [crit] result in the attack roll to a [failure] result."
+  },
+  {
+    "id": "animated-beyond-death",
+    "name": "Animated Beyond Death",
+    "type": "Innate",
+    "cost": 0,
+    "description": "When another allied STORMTROOPER Unit becomes Wounded, if one or more non-Wounded allied NIGHTSISTER Primary characters are within [range] 5 of this Unit, this Unit removes all its Injured tokens."
+  },
+  {
+    "id": "undying-loyalty",
+    "name": "Undying Loyalty",
+    "type": "Innate",
+    "cost": 0,
+    "description": "While this Unit has one or more Injured tokens, this Unit's Order card cannot be placed in reserve and opposing players do not gain Momentum when this Unit becomes Wounded.\nAdditionally, when this Unit becomes Wounded by an enemy effect, after the effect is resolved, this Unit gains an Injured token. Then it removes one Wounded token, all [damage], and one condition from itself. After resolving this effect, if this Unit's Order Card is in reserve, shuffle it into your Order Deck."
   }
 ]
