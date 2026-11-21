@@ -6,8 +6,9 @@ import type { Unit } from '../types/unit';
 import { validateSquad, validateStrikeTeam } from '../lib/validation';
 import { exportSquadToBase64, importSquadFromBase64 } from '../lib/sharing';
 import { Button } from '../components/ui/button';
+import { UnitPicker } from '../components/UnitPicker';
 
-const units = unitsData as Unit[];
+const units = [...unitsData as Unit[]].sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 const slots = ['primary', 'secondary', 'support'] as const;
 export const ListBuilderPage = () => {
   const { squads, addSquad, removeSquad, updateSquadUnit, importSquad } = useSquad();
@@ -27,12 +28,9 @@ export const ListBuilderPage = () => {
       return <section key={squad.id} className="border border-border bg-card p-5 flex flex-col gap-5">
         <div className="flex justify-between items-center"><h2 className="font-mono uppercase">Squad {index + 1}</h2>
           <Button variant="ghost" onClick={() => removeSquad(squad.id)}>Remove squad {index + 1}</Button></div>
-        {slots.map(slot => <label key={slot} className="flex flex-col gap-2 text-sm capitalize">{slot}
-          <select className="bg-background border border-border p-3 w-full text-foreground" value={squad[slot]?.name ?? ''}
-            onChange={e => updateSquadUnit(squad.id, slot, units.find(u => u.name === e.target.value) ?? null)}>
-            <option value="">Select {slot}</option>
-            {units.filter(u => u.type.toLowerCase() === slot).map(u => <option key={u.name} value={u.name}>{u.name} / {Math.abs(u.points)} {slot === 'primary' ? 'SP' : 'points'}</option>)}
-          </select></label>)}
+        {slots.map(slot => <UnitPicker key={slot} slot={slot} squadNumber={index + 1}
+          units={units.filter(unit => unit.type.toLowerCase() === slot)} value={squad[slot]}
+          onChange={unit => updateSquadUnit(squad.id, slot, unit)} />)}
         <div className="text-sm" role="status">{result.valid ? <p className="text-emerald-500">Squad ready</p> : result.errors.map(error => <p key={error} className="text-amber-500">{error}</p>)}</div>
         <Button variant="outline" onClick={() => { setCode(exportSquadToBase64(squad)); setMessage('Squad code ready. Copy it from the field below.'); }}>Export squad {index + 1}</Button>
       </section>;
