@@ -6,10 +6,12 @@ test('build, transfer and play a strike team through an offline reload', async (
   await page.goto('./#/shatterpoint-starpath/list');
   await page.getByRole('button', { name: 'Add squad', exact: true }).click();
   await page.getByRole('button', { name: 'Add squad', exact: true }).click();
-  const selects = page.getByRole('combobox');
   // Core-set Republic and Separatist squads.
   for (const [index, name] of ['General Anakin Skywalker', 'CC-7567 Captain Rex', '501st Clone Troopers', 'Asajj Ventress, Sith Assassin', 'Kalani, Super Tactical Droid', 'B1 Battle Droids'].entries()) {
-    await selects.nth(index).selectOption({ label: (await selects.nth(index).locator('option').allTextContents()).find(v => v.startsWith(name + ' /'))! });
+    const slot = ['Primary', 'Secondary', 'Support'][index % 3];
+    await page.getByRole('combobox', { name: `${slot}, squad ${Math.floor(index / 3) + 1}`, exact: true }).click();
+    await page.getByRole('combobox', { name: `Search ${slot?.toLowerCase()} units`, exact: true }).fill(name);
+    await page.getByRole('option', { name: `${name} /`, exact: false }).click();
   }
   await expect(page.getByText('Squad ready', { exact: true })).toHaveCount(2);
   await page.getByRole('button', { name: 'Export squad 1', exact: true }).click();
@@ -82,4 +84,43 @@ test('invalid preferences and malformed game data survive initialization', async
   await page.goto('./#/shatterpoint-starpath/game');
   expect(await page.evaluate(() => [localStorage.getItem('starpath-theme'), localStorage.getItem('starpath-accent'), localStorage.getItem('starpath-flicker'), localStorage.getItem('starpath-game-v1')])).toEqual(['invalid', 'purple', '123', '{broken']);
   await expect(page.getByRole('alert')).toBeVisible();
+});
+
+test('squad unit pickers sort, search, select and clear units', async ({ page }) => {
+  await page.goto('./#/shatterpoint-starpath/list');
+  await page.getByRole('button', { name: 'Add squad', exact: true }).click();
+  for (const slot of ['Primary', 'Secondary', 'Support']) {
+    await page.getByRole('combobox', { name: `${slot}, squad 1`, exact: true }).click();
+    const dialog = page.getByRole('dialog', { name: `Choose ${slot.toLowerCase()}, squad 1`, exact: true });
+    const names = (await dialog.getByRole('option').allTextContents()).filter(name => name !== 'Clear selection');
+    expect(names.length).toBeGreaterThan(1);
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' })));
+    const search = page.getByRole('combobox', { name: `Search ${slot?.toLowerCase()} units`, exact: true });
+    await expect(search).toBeFocused();
+    await search.fill('no matching unit xyz');
+    await expect(page.getByText('No units found.', { exact: true })).toBeVisible();
+    await search.press('Escape');
+    await expect(dialog).not.toBeVisible();
+  }
+  const primary = page.getByRole('combobox', { name: 'Primary, squad 1', exact: true });
+  await primary.click();
+  const search = page.getByRole('combobox', { name: 'Search primary units', exact: true });
+  await search.fill('vAdEr');
+  const matches = await page.getByRole('option').allTextContents();
+  expect(matches.length).toBeGreaterThan(0);
+  expect(matches.every(name => name.toLowerCase().includes('vader'))).toBe(true);
+  await page.screenshot({ path: `test-results/picker-${test.info().project.name}.png`, animations: 'disabled' });
+  await search.fill('padme');
+  await expect(page.getByRole('option')).toHaveCount(1);
+  await search.press('Enter');
+  await expect(primary).toContainText('Queen Padm');
+  await expect(primary).toHaveAttribute('aria-expanded', 'false');
+  await page.reload();
+  await expect(primary).toContainText('Queen Padm');
+  await primary.click();
+  await expect(search).toHaveValue('');
+  await page.getByRole('option', { name: 'Clear selection', exact: true }).click();
+  await expect(primary).toHaveText('Select primary');
+  await page.reload();
+  await expect(primary).toHaveText('Select primary');
 });
