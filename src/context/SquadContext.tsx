@@ -1,5 +1,7 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
+import { readStored, writeStored } from '../lib/storage';
+import { isSquads } from '../lib/squad-storage';
 import type { Unit } from '../types/unit';
 
 export interface Squad {
@@ -12,6 +14,7 @@ export interface Squad {
 interface SquadContextType {
   squads: Squad[];
   addSquad: () => void;
+  importSquad: (squad: Squad) => void;
   removeSquad: (id: string) => void;
   updateSquadUnit: (squadId: string, slot: 'primary' | 'secondary' | 'support', unit: Unit | null) => void;
 }
@@ -22,17 +25,11 @@ const STORAGE_KEY = 'starpath_squads';
 
 export const SquadProvider = ({ children }: { children: ReactNode }) => {
   const [squads, setSquads] = useState<Squad[]>(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : [];
-    } catch (e) {
-      console.error('Failed to load squads', e);
-      return [];
-    }
+    return readStored(STORAGE_KEY, [], isSquads);
   });
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(squads));
+    writeStored(STORAGE_KEY, squads, isSquads);
   }, [squads]);
 
   const addSquad = () => {
@@ -62,6 +59,7 @@ export const SquadProvider = ({ children }: { children: ReactNode }) => {
 
   const value = {
     squads,
+    importSquad: (squad: Squad) => setSquads(prev => [...prev, squad]),
     addSquad,
     removeSquad,
     updateSquadUnit,

@@ -57,20 +57,6 @@ export const UnitFilterBar: React.FC<UnitFilterBarProps> = ({
     onFilterChange({});
   };
 
-  const primaryFactions = [
-    "501st",
-    "Jedi",
-    "Galactic Republic",
-    "Separatist Alliance",
-    "Sith",
-    "Shadow Collective",
-    "Inquisitorius",
-  ];
-
-  // Combine primary factions with available keywords, ensuring no duplicates and limited count
-  const displayKeywords = Array.from(
-    new Set([...primaryFactions, ...availableKeywords])
-  ).slice(0, 15);
 
   return (
     <div className="flex flex-col gap-4 p-4 border border-zinc-800 bg-zinc-950/90 backdrop-blur-md sticky top-0 z-10 relative overflow-hidden group">

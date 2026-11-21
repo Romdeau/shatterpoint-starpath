@@ -1,28 +1,5 @@
-# Tech Stack
+# Tech stack
 
-## Core Technologies
-- **Framework:** React (v19)
-- **Language:** TypeScript
-- **Build Tool:** Vite
-- **Package Manager:** Bun
+The current stack and commands are documented in [AGENTS.md](AGENTS.md) and [README.md](README.md). Exact dependency versions live in `package.json` and `bun.lock`.
 
-## UI & Styling
-- **CSS Framework:** Tailwind CSS (v4)
-- **Component Library:** shadcn/ui (based on Radix UI)
-- **Icons:** Lucide React
-- **Charts:** Recharts
-
-## Routing & State
-- **Routing:** React Router DOM (v6)
-- **State Management:** React Context API
-
-## Deployment & Tooling
-- **Linting:** ESLint
-- **Formatting:** TypeScript-ESLint
-- **Deployment:** GitHub Pages (Subpath: `/shatterpoint-starpath/`)
-- **Critical Requirement:** Always use `import.meta.env.BASE_URL` for assets in the `public/` folder.
-
-## Environment Details
-- **Cross-Platform:** Developed on macOS and Windows (via WSL Ubuntu-24.04).
-- **WSL Constraint:** On Windows, all `bun` commands MUST be executed via WSL. Use PowerShell for `git` operations.
-- **Node/NPM Prohibited:** Strictly use `bun`. Never use `npm` or `yarn`.
+React 19, React Router 7 with HashRouter, TypeScript 6, Vite 8, Tailwind CSS 4, Radix UI, Lucide, Bun 1.4.3, ESLint 10, Vitest 5 and Playwright. Production builds include a generated service worker from vite-plugin-pwa. Saved squads and game snapshots use localStorage. There is no server, account system or Recharts dependency.

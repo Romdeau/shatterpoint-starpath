@@ -15,7 +15,7 @@ export const validateSquad = (squad: Squad): ValidationResult => {
 
     if (squad.primary && squad.secondary && squad.support) {
         // Check SP
-        const totalCost = squad.secondary.points + squad.support.points;
+        const totalCost = Math.abs(squad.secondary.points) + Math.abs(squad.support.points);
         if (totalCost > squad.primary.points) {
             errors.push(`Squad points exceeded (${totalCost}/${squad.primary.points}).`);
         }
@@ -37,6 +37,8 @@ export const validateSquad = (squad: Squad): ValidationResult => {
 
 export const validateStrikeTeam = (squads: Squad[]): ValidationResult => {
     const errors: string[] = [];
+    if (squads.length !== 2) errors.push("Strike team must contain exactly two squads.");
+    squads.forEach((squad, index) => validateSquad(squad).errors.forEach(error => errors.push(`Squad ${index + 1}: ${error}`)));
     const names = new Set<string>();
 
     squads.forEach(squad => {

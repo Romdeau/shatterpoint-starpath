@@ -1,14 +1,10 @@
-import { expect, test, describe } from "bun:test";
-import { UnitCard } from "./UnitCard";
 import React from "react";
-import { JSDOM } from "jsdom";
+import { expect, test, describe } from "vitest";
+import { UnitCard } from "./UnitCard";
 import { render } from "@testing-library/react";
 import type { Unit } from "../types/unit";
 
-const dom = new JSDOM("<!doctype html><html><body></body></html>");
-global.document = dom.window.document;
-global.window = dom.window as any;
-global.navigator = dom.window.navigator;
+
 
 const mockUnit: Unit = {
   name: "Lord Maul",

@@ -1,4 +1,4 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from "vitest";
 import { validateSquad, validateStrikeTeam } from "./validation";
 import type { Squad } from "../context/SquadContext";
 import type { Unit } from "../types/unit";
@@ -101,4 +101,8 @@ describe("Validation Logic", () => {
             expect(result.errors).toContain("Duplicate unique unit: General Kenobi");
         });
     });
+});
+
+it('enforces budget for signed costs in bundled data', () => {
+  expect(validateSquad({ ...mockSquad, secondary: { ...mockSecondary, points: -4 }, support: { ...mockSupport, points: -5 } }).errors).toContain('Squad points exceeded (9/8).');
 });

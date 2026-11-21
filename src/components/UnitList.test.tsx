@@ -1,11 +1,6 @@
-import { expect, test, describe } from "bun:test";
-import React from "react";
-import { JSDOM } from "jsdom";
+import { expect, test, describe } from "vitest";
 
-const dom = new JSDOM("<!doctype html><html><body></body></html>");
-global.document = dom.window.document;
-global.window = dom.window as any;
-global.navigator = dom.window.navigator;
+
 
 import { render, within } from "@testing-library/react";
 import { UnitList } from "./UnitList";

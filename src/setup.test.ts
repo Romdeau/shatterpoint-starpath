@@ -1,4 +1,4 @@
-import { expect, test } from "bun:test";
+import { expect, test } from "vitest";
 import { existsSync, readFileSync } from "fs";
 
 test("project uses bun.lock and not package-lock.json", () => {

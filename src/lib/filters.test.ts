@@ -1,4 +1,4 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from "vitest";
 import { filterUnits, type UnitFilters } from "./filters";
 import type { Unit } from "../types/unit";
 

@@ -1,4 +1,4 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from "vitest";
 import { transformUnit, transformAbility } from "./transformer";
 import { validate } from "jsonschema";
 import unitSchema from "./schema.json";

@@ -1,16 +1,8 @@
-# Project Tracks
+# Project tracks
 
-This file tracks all major tracks for the project. Each track has its own detailed plan in its respective folder.
+The original tracks below are historical. Current remaining work is tracked in [TODO.md](../TODO.md).
 
----
+- [Initial setup](archive/starpath_setup_20260112/plan.md)
+- [Unit data integration](archive/scrape_units_20260112/plan.md)
 
-## Active Tracks
-
-(No active tracks)
-
----
-
-## Archived Tracks
-
-### [~] Track: Scrape & Integrate Full Unit Data
-*Link: [./conductor/archive/scrape_units_20260112/](./conductor/archive/scrape_units_20260112/)*
+The archived manual verification and performance audit checkboxes remain unverified historical steps. Search/filter integration and real data loading have since shipped in `src/pages/UnitListPage.tsx`.

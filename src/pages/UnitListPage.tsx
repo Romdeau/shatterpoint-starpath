@@ -5,12 +5,11 @@ import { UnitDetailDialog } from "../components/UnitDetailDialog";
 import unitData from "../data/units.json";
 import type { Unit } from "../types/unit";
 import { filterUnits, type UnitFilters } from "../lib/filters";
-import { useTheme } from "../context/ThemeContext";
+
 
 const units = unitData as unknown as Unit[];
 
 export const UnitListPage = () => {
-  const { accent } = useTheme();
   const [filters, setFilters] = useState<UnitFilters>({});
   const [selectedUnit, setSelectedUnit] = useState<Unit | null>(null);
 

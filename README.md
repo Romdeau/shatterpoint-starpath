@@ -1,88 +1,41 @@
 # Shatterpoint Starpath
-### Tactical Analysis & Logistics Interface // N-S9 Unit
 
-**Shatterpoint Starpath** is a premium list builder and game state manager for the Star Wars Shatterpoint Game by Atomic Mass Games. Inspired by the rugged, utilitarian aesthetic of the starpath units seen in the *Andor* series, this tool provides a high-contrast, industrial interface for tracking your strike team's progress.
+A local-first Star Wars Shatterpoint squad builder and game tracker. [Open the app](https://romdeau.github.io/shatterpoint-starpath/).
 
-[**Live Application**](https://romdeau.github.io/shatterpoint-starpath/)
+## Use at the table
 
----
+Browse and filter the bundled unit database, then open List Builder. Select a Primary, Secondary and Support for each of two squads. The builder checks points, shared eras and duplicate unit names. Export each squad as a code to copy into another browser's Squad code field.
 
-## 🛰️ Project Mission
-The core aim is to provide a seamless list-building experience and a robust game state manager, eliminating the need for excessive physical tokens and cards during matches.
+Game Manager starts from a valid strike team and saves a snapshot separately from the builder. Track damage, injuries, conditions, activation, Force and the struggle counter. Changes to squads do not change an active game. End game asks for confirmation and keeps the squads.
 
-- **List Builder:** Enforce official squad-building rules and manage multiple squads.
-- **Sharing:** Export and import squads via base64 encoded strings for immediate deployment.
-- **Game State Manager:** Track health, damage, conditions (Strained, Disarmed, etc.), and struggle progression.
-- **Visual Hierarchy:** Critical game stats are prioritized for high-glanceability during intense matches.
+The game tracker records counters; it does not adjudicate attacks, wounds, turn sequencing or victory. The validator covers basic construction constraints, not every card exception or character alias. Check current cards and event rules when building a team.
 
-## 🎨 The Andor Aesthetic
-Inspired by the N-S9 Starpath unit, the interface follows a "form follows function" philosophy:
-*   **Industrial Palette:** Dark backgrounds with sharp terminal greens, command-center oranges, and imperial reds.
-*   **Tactical Hierarchy:** High-contrast data readability designed for various lighting conditions at a gaming table.
-*   **In-Universe Utility:** Atmospheric flair including sector scanning and comms-link status indicators.
+## Offline and saved data
 
-## 🛠️ Tech Stack
-Built with modern, high-performance technologies:
-- **Framework:** [React 19](https://react.dev/)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Runtime/Package Manager:** [Bun](https://bun.sh/)
-- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI primitives)
+Open the production app online once and allow the service worker to finish installing before going offline. The app caches its shell, bundled data and local assets. Hash routes work on GitHub Pages and survive offline reloads. Development mode does not install a worker. Updates wait until the app's tabs close and reopen, so a match is never reloaded automatically.
 
----
+Squads use the existing `starpath_squads` localStorage key. The active game uses `starpath-game-v1`. Theme preferences retain their existing keys. Storage belongs to the browser and origin; it does not sync between devices. Export squad codes before clearing site data. Corrupt saves are preserved rather than overwritten; a visible warning explains failed writes. A full browser storage quota or private-mode restrictions can prevent saving. Active games currently have no portable backup format.
 
-## 🚀 Getting Started
+## Develop and validate
 
-### Prerequisites
-- [Bun](https://bun.sh/docs/installation) installed on your system.
+Use Bun 1.4.3 and Node 24.15 or newer on the 24.x line, or Node 26+. Native Windows and Unix shells are supported. TypeScript stays on 6.0 until the ESLint stack declares TypeScript 7 support. A `glob` override selects the patched 14.x release for Workbox; recheck it when Workbox updates.
 
-### Development
-```bash
-# Install dependencies
-bun install
-
-# Start development server
+```sh
+bun install --frozen-lockfile
 bun run dev
-
-# Run tests
-bun test
-
-# Build for production
-bun run build
+bun run check
+bunx playwright install chromium
+bun run test:e2e
 ```
 
----
+`check` runs ESLint, TypeScript, Vitest and the production build. Browser tests run the production preview on port 4173, with desktop and mobile Chromium projects. They cover squad selection, transfer, game controls, persistence and offline reloads. Test artifacts go in `test-results/`.
 
-## 📦 Deployment Guide
+## Deploy
 
-This project is configured for automated hosting on **GitHub Pages**.
+Pull requests run validation and browser tests in `.github/workflows/ci.yml`. A push to `main` or a manual run of `deploy.yml` validates and builds, then uploads `dist/` to GitHub Pages using the Pages artifact deployment action. Set repository Settings > Pages > Source to GitHub Actions. Vite's base is `/shatterpoint-starpath/`; public assets must respect it.
 
-### configuration
+## Project reference
 
-#### Vite Base Path
-The `base` property in `vite.config.ts` matches the repository name to ensure assets load correctly:
-```ts
-base: '/shatterpoint-starpath/'
-```
+See [AGENTS.md](AGENTS.md) for repository instructions and [TODO.md](TODO.md) for remaining work. The `conductor/archive/` plans describe historical work and are not current completion checklists. Dependency versions in `package.json` and `bun.lock` are authoritative.
 
-#### GitHub Repository Settings
-1. Go to your repository on GitHub.
-2. Navigate to **Settings** > **Pages**.
-3. Under **Build and deployment** > **Source**, select **GitHub Actions**.
-
-### Automatic Deployment
-Any push to the `main` branch triggers the deployment workflow defined in `.github/workflows/deploy.yml`:
-1. **Setup:** Initializes the Bun environment.
-2. **Build:** Executes `bun run build`.
-3. **Deploy:** Pushes the `dist` folder to the `gh-pages` branch.
-
-### Manual Deployment
-1. Go to the **Actions** tab in your GitHub repository.
-2. Select the **Deploy static content to Pages** workflow.
-3. Click **Run workflow**.
-
----
-
-## ⚖️ Legal Disclaimer
-**Community tool.** Not affiliated with Atomic Mass Games. Star Wars Shatterpoint and all related materials are trademarks and copyrights of Atomic Mass Games and Lucasfilm Ltd.
+Community tool, not affiliated with Atomic Mass Games or Lucasfilm. Star Wars Shatterpoint and its materials belong to their respective owners.
