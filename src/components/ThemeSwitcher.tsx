@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { Monitor, Zap, Palette, Sun, Moon } from 'lucide-react';
+import { Monitor, Sun, Moon } from 'lucide-react';
 import { clsx } from 'clsx';
 
 export const ThemeSwitcher: React.FC = () => {

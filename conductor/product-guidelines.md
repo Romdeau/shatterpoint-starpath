@@ -1,3 +1,7 @@
+# Historical design notes
+
+The remote Aurebesh font import described below was removed for offline use. Preserve local font fallbacks unless a licensed font is bundled. See [AGENTS.md](../AGENTS.md) for current guidance.
+
 # Product Guidelines - Shatterpoint Starpath
 
 ## Visual Aesthetic & Design Language

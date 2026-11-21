@@ -1,24 +1,11 @@
-import { describe, it, expect, beforeEach } from "bun:test";
-import { JSDOM } from "jsdom";
+import { describe, it, expect, beforeEach } from "vitest";
 import { renderHook, act } from "@testing-library/react";
 import { SquadProvider, useSquad } from "./SquadContext";
 import type { Unit } from "../types/unit";
 
-const dom = new JSDOM("<!doctype html><html><body></body></html>");
-global.document = dom.window.document;
-global.window = dom.window as any;
-global.navigator = dom.window.navigator;
 
-// Mock localStorage
-const storage: Record<string, string> = {};
-global.localStorage = {
-    getItem: (key: string) => storage[key] || null,
-    setItem: (key: string, value: string) => { storage[key] = value },
-    clear: () => { Object.keys(storage).forEach(k => delete storage[k]) },
-    removeItem: (key: string) => { delete storage[key] },
-    length: 0,
-    key: () => null
-} as any;
+
+
 
 // Mock Unit
 const mockPrimary: Unit = {

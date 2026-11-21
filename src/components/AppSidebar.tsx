@@ -1,11 +1,9 @@
-import * as React from "react"
 import { Link, useLocation } from "react-router-dom"
 import {
   LayoutDashboard,
   Swords,
   Database,
   Settings,
-  MoreHorizontal,
   ChevronUp,
   User2,
   PanelLeft,
@@ -19,7 +17,6 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarTrigger,
   SidebarGroup,
   SidebarGroupLabel,
   SidebarGroupContent,
@@ -28,7 +25,6 @@ import {
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { ThemeSwitcher } from "./ThemeSwitcher"
@@ -166,15 +162,7 @@ export function AppSidebar() {
                   </span>
                 </div>
                 <ThemeSwitcher />
-                <div className="p-2 border-t border-zinc-900">
-                  <DropdownMenuItem className="text-[10px] font-mono uppercase text-zinc-400 focus:bg-emerald-500/10 focus:text-emerald-500 cursor-pointer">
-                    Registry Reset
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="text-[10px] font-mono uppercase text-zinc-400 focus:bg-emerald-500/10 focus:text-emerald-500 cursor-pointer">
-                    Secure Logout
-                  </DropdownMenuItem>
-                </div>
-              </DropdownMenuContent>
+</DropdownMenuContent>
             </DropdownMenu>
           </SidebarMenuItem>
         </SidebarMenu>

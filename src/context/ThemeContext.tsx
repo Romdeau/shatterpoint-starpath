@@ -1,7 +1,12 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
+import { readStored, writeStored, readPreference, writePreference } from '../lib/storage';
+
 type Theme = 'dark' | 'light';
 type Accent = 'emerald' | 'amber' | 'red';
+const isTheme = (v: unknown): v is Theme => v === 'dark' || v === 'light';
+const isAccent = (v: unknown): v is Accent => v === 'emerald' || v === 'amber' || v === 'red';
+const isBoolean = (v: unknown): v is boolean => typeof v === 'boolean';
 
 interface ThemeContextType {
   theme: Theme;
@@ -15,17 +20,16 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(() => (localStorage.getItem('starpath-theme') as Theme) || 'dark');
-  const [accent, setAccent] = useState<Accent>(() => (localStorage.getItem('starpath-accent') as Accent) || 'emerald');
+  const [theme, setTheme] = useState<Theme>(() => readPreference('starpath-theme', 'dark', isTheme));
+  const [accent, setAccent] = useState<Accent>(() => readPreference('starpath-accent', 'emerald', isAccent));
   const [isFlickerEnabled, setIsFlickerEnabled] = useState<boolean>(() => {
-    const saved = localStorage.getItem('starpath-flicker');
-    return saved !== null ? saved === 'true' : true;
+    return readStored('starpath-flicker', false, isBoolean);
   });
 
   useEffect(() => {
-    localStorage.setItem('starpath-theme', theme);
-    localStorage.setItem('starpath-accent', accent);
-    localStorage.setItem('starpath-flicker', String(isFlickerEnabled));
+    writePreference('starpath-theme', theme, isTheme);
+    writePreference('starpath-accent', accent, isAccent);
+    writeStored('starpath-flicker', isFlickerEnabled, isBoolean);
 
     const root = document.documentElement;
     root.classList.remove('theme-dark', 'theme-light', 'accent-emerald', 'accent-amber', 'accent-red', 'dark');

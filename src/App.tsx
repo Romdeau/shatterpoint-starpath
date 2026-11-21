@@ -6,8 +6,12 @@ import { ListBuilderPage } from "./pages/ListBuilderPage";
 import { GameManagerPage } from "./pages/GameManagerPage";
 import { useTheme } from "./context/ThemeContext";
 
-function App() {
-  const { accent, isFlickerEnabled } = useTheme();
+import { StorageNotice } from "./components/StorageNotice";
+
+import { GameProvider } from "./context/GameContext";
+
+function AppContent() {
+  const { isFlickerEnabled } = useTheme();
   const location = useLocation();
 
   const getPageHeading = () => {
@@ -57,7 +61,7 @@ function App() {
                 <div className="flex items-center gap-4 border-r border-zinc-900 pr-6 h-8 hidden sm:flex">
                   <span className="text-[10px] text-emerald-500 uppercase font-bold tracking-widest animate-pulse flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
-                    Imperial Link: Connected
+                    Local registry: Active
                   </span>
                 </div>
                 <div className="flex flex-col">
@@ -84,6 +88,7 @@ function App() {
           {/* Main Content Area */}
           <main className="flex-1 p-6 md:p-10 relative">
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
+              <StorageNotice />
               <Routes>
                 <Route path="/shatterpoint-starpath/" element={<UnitListPage />} />
                 <Route path="/shatterpoint-starpath/list" element={<ListBuilderPage />} />
@@ -128,4 +133,6 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return <GameProvider><AppContent /></GameProvider>;
+}

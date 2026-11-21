@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import type { Unit } from "../types/unit";
 import { UnitCard } from "./UnitCard";
 import { cn } from "../lib/utils";

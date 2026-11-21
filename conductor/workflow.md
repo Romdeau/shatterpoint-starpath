@@ -1,3 +1,7 @@
+# Historical workflow
+
+This is the original Conductor process. Current repository instructions are in [AGENTS.md](../AGENTS.md); current remaining work is in [TODO.md](../TODO.md).
+
 # Project Workflow
 
 ## Guiding Principles
